@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#1d2b52">
-<meta name="description" content="2027 수능 국어 연계 우선 학습: 문학 25작품·독서 20제재 학습 카드와 PDF 작품 색인 75개">
+<meta name="description" content="2027 수능 국어 연계 우선 학습: 중요 문학 S·A 34, 문학 25작품·독서 20제재 학습 카드, 작품 색인 75개, 수능완성 학습맵 연결">
 <title>국어 파이널 허브</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@ main{min-width:0;max-width:820px;width:100%;margin:0 auto}
 .navbtn .dot{width:.6rem;height:.6rem;border-radius:50%}
 
 /* bottom nav */
-.bnav{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:.3rem .3rem calc(.3rem + env(safe-area-inset-bottom))}
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--card);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:.3rem .3rem calc(.3rem + env(safe-area-inset-bottom))}
 .bnav button{border:0;background:none;padding:.35rem 0;border-radius:.8rem;font-size:.72rem;font-weight:700;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:.1rem}
 .bnav button b{font-size:1.25rem;line-height:1.2}
 .bnav button.on{color:var(--brand);background:var(--card2)}
@@ -226,7 +226,8 @@ tr:last-child td{border-bottom:0}
 .res{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:.9rem;padding:.7rem .85rem;margin:.45rem 0}
 .res mark{background:var(--hl);color:inherit;border-radius:.2rem}
 
-.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:5.5rem;z-index:80;background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:.9rem;font-size:.88rem;font-weight:700;max-width:90vw;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:5.5rem;z-index:80;background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:.9rem;font-size:.88rem;font-weight:700;max-width:92vw;width:max-content;box-shadow:0 6px 20px rgba(0,0,0,.2);display:flex;align-items:center;gap:.7rem}
+.toast .tbtn{flex:none;border:0;background:var(--accent);color:#fff;border-radius:.6rem;padding:.35rem .7rem;font-weight:900;font-size:.82rem}
 .foot{text-align:center;color:var(--muted);font-size:.75rem;margin:2rem 0 1rem}
 
 /* print */
@@ -293,6 +294,63 @@ tr:last-child td{border-bottom:0}
 .tagl button{border:1px solid var(--line);background:var(--card2);border-radius:99px;padding:.25rem .65rem;font-size:.8rem;font-weight:700}
 .tagl button.done{text-decoration:line-through;opacity:.55}
 .pr{display:grid;grid-template-columns:5.2rem 1fr 3.4rem;gap:.5rem;align-items:center;font-size:.82rem;margin:.35rem 0}
+
+/* ===== 중요 S·A 34 (2026-11 보강) ===== */
+.ebsgo{display:flex;align-items:center;gap:.8rem;width:100%;text-align:left;border:0;border-radius:1.2rem;padding:1rem 1.05rem;margin:0 0 .7rem;background:linear-gradient(135deg,#ff8a45,#e0453a 70%,#b8322b);color:#fff;box-shadow:0 6px 18px rgba(224,69,58,.25);text-decoration:none;font:inherit}
+.ebsgo .ic{font-size:1.9rem;flex:none;line-height:1}
+.ebsgo .tx{flex:1;min-width:0}
+.ebsgo strong{display:block;font-size:1.08rem;font-weight:900;letter-spacing:-.02em}
+.ebsgo small{display:block;font-size:.8rem;opacity:.93;margin-top:.1rem;line-height:1.45}
+.ebsgo .ar{font-size:1.3rem;font-weight:900;flex:none}
+.ebsgo .mini{display:block;height:.4rem;background:rgba(255,255,255,.3);border-radius:9px;margin-top:.5rem;overflow:hidden}
+.ebsgo .mini i{display:block;height:100%;background:#fff;border-radius:9px}
+.ebsgo.alt{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:1rem}
+.ebsgo.alt small{color:var(--muted);opacity:1}
+.ehero{border-radius:1.4rem;padding:1.15rem 1.1rem;background:linear-gradient(140deg,#6e1d18 0%,#d23f35 55%,#ff8f45 100%);color:#fff;margin-bottom:.8rem}
+.ehero h1{color:#fff;margin:.15rem 0 .25rem}
+.ehero p{margin:0;font-size:.88rem;color:#ffeae0}
+.ehero .epg{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;margin-top:.95rem;background:rgba(255,255,255,.14);border-radius:1rem;padding:.75rem .9rem}
+.ehero .num{font-size:2.3rem;font-weight:900;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ehero .num span{font-size:1rem;opacity:.8;font-weight:800}
+.ehero .pr2{display:grid;grid-template-columns:1.2rem 1fr 2.6rem;gap:.45rem;align-items:center;font-size:.8rem;font-weight:800;margin:.2rem 0;font-variant-numeric:tabular-nums}
+.ehero .pr2 .bar{background:rgba(255,255,255,.25)}.ehero .pr2 .bar i{background:#fff}
+.ehero .epick{margin-top:.85rem;width:100%;background:#fff;color:#b8322b;border:0;font-weight:900}
+.elegend summary{cursor:pointer}
+.elegend ul{margin:.5rem 0 0;padding-left:1.1rem}.elegend li{margin:.25rem 0}
+.eg{flex:none;width:2.7rem;height:2.7rem;border-radius:.85rem;display:grid;place-items:center;font-weight:900;font-size:1.3rem}
+.gS{background:#ffd54a;color:#5a3d00}.gA{background:#c5efe3;color:#0b5a48}
+.badge.gS,.badge.gA{border:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gS{background:#6b5410;color:#ffe08a}:root:not([data-theme="light"]) .gA{background:#164a3e;color:#a6f0db}:root:not([data-theme="light"]) .badge.past{background:#1c2846;color:#9db8ff}}
+:root[data-theme="dark"] .gS{background:#6b5410;color:#ffe08a}:root[data-theme="dark"] .gA{background:#164a3e;color:#a6f0db}:root[data-theme="dark"] .badge.past{background:#1c2846;color:#9db8ff}
+.ecard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:.85rem .9rem;margin:0 0 .7rem;box-shadow:var(--shadow);border-left:.35rem solid var(--era);scroll-margin-top:5rem}
+.ecard.done{background:color-mix(in srgb,var(--good-bg) 55%,var(--card))}
+.ecard .eh{display:flex;gap:.7rem;align-items:center}
+.ecard .et{min-width:0}
+.ecard .t{font-weight:900;font-size:1.1rem;line-height:1.3;letter-spacing:-.02em}
+.ecard .au{font-size:.8rem;color:var(--muted)}
+.ecard .em{display:flex;flex-wrap:wrap;gap:.3rem;margin:.6rem 0 0}
+.badge.past{background:#eaf0ff;color:#2f5bd3;border:0}
+.ecard .el{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.lk{border:1px solid var(--line);background:var(--card2);border-radius:.75rem;padding:.4rem .7rem;font-size:.82rem;font-weight:800;color:var(--ink);text-decoration:none;min-height:2.4rem;display:inline-flex;align-items:center;font-family:inherit}
+.nolink{font-size:.82rem;color:var(--muted);background:var(--card2);border-radius:.7rem;padding:.45rem .7rem}
+.ecard .ea{display:grid;grid-template-columns:1fr 1fr;gap:.45rem;margin-top:.65rem}
+.ecard .ea .btn{min-height:2.7rem;font-size:.9rem}
+.ecard.flash{animation:flb 2.2s ease}
+.morow{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.65rem 0;border-bottom:1px solid var(--line)}
+.morow:last-of-type{border-bottom:0}
+.morow .t{font-weight:800}
+.morow .m{font-size:.78rem;color:var(--muted);margin-top:.15rem}
+.morow .lk{flex:none}
+.mob{color:var(--bad)}
+.btn.mini{min-height:2.1rem;padding:.25rem .65rem;font-size:.8rem}
+@media(max-width:380px){.bnav button{font-size:.66rem}.ebsgo{padding:.9rem}.ecard .t{font-size:1.02rem}}
+
+.esbox{margin:.2rem 0 .5rem;padding:.65rem .9rem;font-size:.95rem}
+.ecrit{margin:0 0 .3rem}
+.crit{font-size:.8rem;color:var(--muted);background:var(--card2);border-radius:.8rem;padding:.55rem .75rem;margin:.2rem 0 .8rem;line-height:1.55}
+.linkbtn{border:0;background:none;color:var(--brand);font-weight:800;padding:0;text-decoration:underline;font-size:inherit}
+.ptab{font-size:10pt}.ptab td,.ptab th{padding:.3rem .4rem;border-bottom:1px solid #ccc}.ptab td:first-child{font-size:12pt}
+@media(max-width:340px){.bnav button{font-size:.6rem}.bnav button b{font-size:1.1rem}}
 @media print{.icard details>*{display:block!important}.icard details summary{display:none!important}.icard{border-left-width:2px}}
 </style>
 </head>
@@ -311,7 +369,7 @@ tr:last-child td{border-bottom:0}
 <nav class="bnav noprint" id="bnav" aria-label="빠른 이동"></nav>
 <noscript><p style="padding:1rem">이 학습 도구는 JavaScript가 켜져 있어야 작동합니다.</p></noscript>
 <script>
-const XL={"R": [{"id": "r01", "area": "인문", "sub": "서양철학·논리", "title": "프레게·러셀의 이름 이론", "book": "수특", "pp": "75~76", "concept": "뜻·지시체·동일성 명제 / 기술구 이론", "judge": "동일 지시체 ≠ 동일한 뜻; 고유명 분석과 기술구 분석을 구분"}, {"id": "r02", "area": "인문", "sub": "동양철학·성리학", "title": "장재·정이의 이기 관계", "book": "수특", "pp": "79~80", "concept": "이(理)·기(氣), 본연·기질, 두 학자별 이·기 관계", "judge": "이·기 선후·기능을 한 학자의 주장으로 뒤섞지 않기"}, {"id": "r03", "area": "인문", "sub": "건축·공간 철학 (사회 융합)", "title": "건축 구조·재료와 공간의 사회성", "book": "수특", "pp": "252~253", "concept": "구조 하중·재료 조건, 르페브르의 공간 구분", "judge": "물리적 구조의 기능과 사회적으로 경험·구성되는 공간 구별"}, {"id": "r04", "area": "인문", "sub": "과학철학·귀납", "title": "귀납의 한계", "book": "수완", "pp": "160~161", "concept": "귀납의 정당화, 흄·러셀·굿맨의 논증", "judge": "관찰 결과에서 필연적 일반법칙이 나오지는 않음"}, {"id": "r05", "area": "인문", "sub": "인식론·지각철학", "title": "지각 경험의 내용과 지각적 믿음의 정당화", "book": "수완", "pp": "187~188", "concept": "지각 경험의 옳음 조건, 개념주의·비개념주의", "judge": "지각 내용과 지각적 믿음의 정당화의 층위 구분"}, {"id": "r06", "area": "인문", "sub": "언어학·심리", "title": "스키너와 촘스키의 언어 학습 이론", "book": "수완", "pp": "212~213", "concept": "자극·반응·강화, 보편 문법·선천성, 창조적 문장 생성", "judge": "후천적 강화만으로 모든 언어 사용을 설명할 수 있는지"}, {"id": "r07", "area": "사회", "sub": "행정법", "title": "행정 대집행과 의무 이행", "book": "수특", "pp": "118~119", "concept": "공법상 대체적 작위 의무, 계고, 대집행 요건·절차", "judge": "사법상 의무·부작위 의무·대체 불가능한 의무와 대집행 구별"}, {"id": "r08", "area": "사회", "sub": "거시경제", "title": "고전학파·케인스·IS-LM / IS-MP 모형", "book": "수특", "pp": "122~123", "concept": "IS·LM·MP 곡선, 재정·통화 정책, 금리·소득 균형", "judge": "곡선 자체의 이동과 기존 곡선 위의 이동 구별"}, {"id": "r09", "area": "사회", "sub": "법철학·민법", "title": "법적 의제·성년의제", "book": "수특", "pp": "162~163", "concept": "법적 의제, 법률상 간주, 성년의제, 법적 효과", "judge": "실제 사실과 법적 효과를 구분; 의제와 추정 혼동 주의"}, {"id": "r10", "area": "사회", "sub": "세법·조세", "title": "조세법률주의·상속세·증여세", "book": "수특", "pp": "243~244", "concept": "조세법률주의, 열거주의·포괄주의, 증여·상속", "judge": "과세대상·납세의무자·세액 판단을 분리"}, {"id": "r11", "area": "사회", "sub": "형법·인과관계", "title": "형법의 인과관계와 조건설", "book": "수특", "pp": "262~263", "concept": "조건설·합법칙적 조건설, 필요조건·충분 원인", "judge": "독립적으로 충분한 원인과 인과관계 성립 논증을 구분"}, {"id": "r12", "area": "사회", "sub": "법해석·논리", "title": "법률 해석과 유추 적용", "book": "수특", "pp": "269~270", "concept": "법의 흠결, 유추·연역, 법적 관련성", "judge": "표면 유사성 ≠ 규범상 핵심 유사성"}, {"id": "r13", "area": "사회", "sub": "민법·법인", "title": "법인의 권리 능력과 유형", "book": "수완", "pp": "19~22", "concept": "법인격·권리/행위 능력, 법인 의제설·실재설, 사단/재단", "judge": "법인의 배상 책임·대표자의 책임·정관변경 조건"}, {"id": "r14", "area": "사회", "sub": "형법·책임", "title": "법률의 착오와 법적 책임", "book": "수완", "pp": "189~191", "concept": "법률의 착오, 위법성 인식 가능성, 정당한 이유", "judge": "법률 금지 사실을 몰랐다는 사실 자체가 곧 면책은 아님"}, {"id": "r15", "area": "사회", "sub": "헌법·언론법", "title": "언론의 자유와 법적 책임", "book": "수완", "pp": "214~216", "concept": "언론·출판의 자유, 사전 검열, 사후 책임, 규제 합헌성", "judge": "허가·검열과 등록·사후 법적 책임을 구별"}, {"id": "r16", "area": "과학기술", "sub": "생명과학·확률", "title": "하디-바인베르크 유전 평형", "book": "수특", "pp": "181~182", "concept": "대립유전자 빈도 p·q, p²+2pq+q², 평형 조건", "judge": "대립유전자 빈도·유전자형 빈도·표현형 빈도 구별"}, {"id": "r17", "area": "과학기술", "sub": "AI·정보", "title": "원-핫 인코딩과 단어 벡터 표현", "book": "수특", "pp": "194~195", "concept": "원-핫 벡터·분산 표현, 유클리드 거리·코사인 유사도", "judge": "차원·방향·거리·유사도를 혼동하지 않기"}, {"id": "r18", "area": "과학기술", "sub": "컴퓨터 구조", "title": "CPU·GPU의 병렬 연산", "book": "수특", "pp": "198~199", "concept": "스레드·블록·메모리, 직렬/병렬, 처리효율", "judge": "병렬 실행이 언제나 빠르지는 않음; 분기·메모리 제약 고려"}, {"id": "r19", "area": "과학기술", "sub": "생명과학·기체 물리", "title": "분압과 기체의 이동·폐포 산소 분압", "book": "수완", "pp": "164~166", "concept": "기체 분압, 기체 농도·용해도, 확산 방향·폐포 기체교환", "judge": "2027 6월 폐포 표면장력과 분압 법칙은 서로 다른 원리"}, {"id": "r20", "area": "과학기술", "sub": "정보보안·은닉", "title": "스테가노그래피", "book": "수완", "pp": "217~219", "concept": "LSB·PVD, 픽셀 값 차이, 메시지 은닉·추출", "judge": "암호화와 은닉의 목적 구별; 차잇값별 삽입 비트수"}], "L": [{"id": "l01", "genre": "고전산문", "sub": "가정소설", "title": "반씨전", "book": "수특", "pp": "129~130", "emo": "", "att": "", "exp": "대화·사건의 인과, 참소와 진실의 대비", "chars": "반씨·채씨·맹씨·양씨·위윤·채영·반옥", "core": "반씨를 시기하는 채씨·맹씨; 시어머니 양씨의 판단; 채영의 모함"}, {"id": "l02", "genre": "고전산문", "sub": "가문소설", "title": "현몽쌍룡기", "book": "수특", "pp": "133~135", "emo": "", "att": "", "exp": "인물별 정보 비대칭, 사건 경위에 대한 대화", "chars": "정채임·조용홍·조용창·춘앵·벽란·정참정", "core": "정채임은 조용홍의 정혼 상대; 시비들이 남장 도피 경위 설명"}, {"id": "l03", "genre": "고전산문", "sub": "가정·가문소설", "title": "창선감의록", "book": "수완", "pp": "146~147", "emo": "", "att": "", "exp": "서술자의 논평, 인물의 대화·고소와 실제 행위 대비", "chars": "화진·화춘·심씨·성부인·성준·범한·조씨", "core": "화진을 모함하는 심씨·화춘, 범한·조씨의 계략; 성부인의 보호"}, {"id": "l04", "genre": "고전산문", "sub": "애정·기이 서사", "title": "서해무릉기", "book": "수특", "pp": "125~127", "emo": "", "att": "", "exp": "변장·꿈의 예고·재회의 구조, 공간 묘사", "chars": "유생·최씨·계선·노승", "core": "여승으로 변장한 유생이 최씨를 찾아감; 계선이 전달자"}, {"id": "l05", "genre": "고전산문", "sub": "몽유록", "title": "대관재몽유록", "book": "수특", "pp": "138~139", "emo": "", "att": "", "exp": "꿈과 현실 층위 대조, 과장·우의·문단 인물의 등장", "chars": "심의(꿈속 화자)·김시습·이규보·두보·이백", "core": "문단 인물들이 꿈속 조정의 인물로 등장; 화자의 영달 경험"}, {"id": "l06", "genre": "고전산문", "sub": "영웅·기이소설", "title": "금방울전", "book": "수특", "pp": "142~143", "emo": "", "att": "", "exp": "꿈·예언·조력의 영웅 서사, 공로의 귀속", "chars": "금령·장해룡·공주·천자·황후", "core": "금령과 장해룡이 공주 구출에 공헌; 천자가 장해룡의 공적 인정"}, {"id": "l07", "genre": "고전산문", "sub": "우화·풍자소설", "title": "두껍전", "book": "수완", "pp": "193~194", "emo": "", "att": "", "exp": "동물 의인화, 허풍·과장·언변 경쟁", "chars": "두꺼비·여우·노루·토끼", "core": "동물들이 상좌의 자격을 두고 나이 경쟁; 두꺼비가 논쟁 참여"}, {"id": "l08", "genre": "고전산문", "sub": "애정·신분반전", "title": "옥단춘전", "book": "수특", "pp": "154~156", "emo": "", "att": "", "exp": "신분 은폐·반전, 인물 대화, 암행어사 출두", "chars": "이혈룡·옥단춘·김진희·역졸", "core": "옥단춘은 이혈룡을 구하고 도와줌; 김진희의 박대와 이혈룡의 어사 신분 반전"}, {"id": "l09", "genre": "고전산문", "sub": "역사·궁중 서사", "title": "인현왕후전", "book": "수특", "pp": "262~264", "emo": "", "att": "", "exp": "인물 반응·행동과 서술자 평가, 사건 순서", "chars": "인현 왕후·숙종·궁녀·대비", "core": "인현 왕후의 폐위 이후 생활과 복위 요청에 대한 반응"}, {"id": "l10", "genre": "고전시가", "sub": "강호·자연 가사", "title": "면앙정가", "book": "수특", "pp": "58~60", "emo": "자연 경관에 대한 감흥·풍류·감사", "att": "강호 생활의 즐거움과 임금 은혜를 함께 인식", "exp": "계절·공간 이동, 대구·열거, 생동감 있는 산수 묘사", "chars": "—", "core": "—"}, {"id": "l11", "genre": "고전시가", "sub": "강호·자연 가사", "title": "상춘곡", "book": "수특", "pp": "", "emo": "자연 경관에 대한 감흥·풍류·감사", "att": "", "exp": "", "chars": "", "core": ""}, {"id": "l12", "genre": "고전시가", "sub": "여성 기행가사", "title": "부여노정기", "book": "수완", "pp": "60~61", "emo": "기쁨·자부심·가족애", "att": "아들의 부임을 기뻐하고 여정을 관찰", "exp": "노정(여정)의 순차적 서술, 경치·사건 열거", "chars": "—", "core": "—"}, {"id": "l13", "genre": "고전시가", "sub": "현실비판 가사", "title": "합강정가", "book": "수특", "pp": "244~246", "emo": "분노·비판·안타까움", "att": "민생 고통에 공감하고 탐관오리의 행태 비판", "exp": "대조·풍자·과장, 사회 현실의 구체적 서술", "chars": "—", "core": "—"}, {"id": "l14", "genre": "고전시가", "sub": "강호 연시조", "title": "풍계육가", "book": "수특", "pp": "268", "emo": "한가로움·만족·자연 친화", "att": "은거 생활에서 소박한 즐거움을 누림", "exp": "시조 연작·자연물·창/문의 대조", "chars": "—", "core": "—"}, {"id": "l15", "genre": "고전시가", "sub": "강호·교훈 가사", "title": "목동가", "book": "수특", "pp": "267~268", "emo": "현실 참여와 은거의 가치가 함께 제시됨", "att": "경세제민의 지향과 안분지족의 삶을 대비", "exp": "대화·대조·설의 등 논쟁적 발화", "chars": "—", "core": "—"}, {"id": "l16", "genre": "고전시가", "sub": "유배·연군가사", "title": "만분가", "book": "수완", "pp": "249~250", "emo": "원통함·억울함·임에 대한 그리움", "att": "유배 처지를 한탄하고 연군의 뜻을 드러냄", "exp": "고사 인용·가상 변신 소망·반복·감탄", "chars": "—", "core": "—"}, {"id": "l17", "genre": "고전시가", "sub": "교유·강호 연시조", "title": "월곡답가", "book": "수특", "pp": "51", "emo": "벗에 대한 그리움·친밀감", "att": "물리적 거리에도 벗을 잊지 않고 교유를 지향", "exp": "연작·대구·자연 이미지, 거리와 마음의 대비", "chars": "—", "core": "—"}, {"id": "l18", "genre": "고전시가", "sub": "강호 연시조", "title": "만흥", "book": "수특", "pp": "308", "emo": "자족·한가로움·감사", "att": "자연 속 만족과 군은에 대한 감사가 공존", "exp": "대구·설의·반복, 사물과 자연 묘사", "chars": "—", "core": "—"}, {"id": "l19", "genre": "현대시", "sub": "참여·성찰시", "title": "그 방을 생각하며", "book": "수특", "pp": "96", "emo": "혁명 좌절·허무·낯선 기쁨", "att": "좌절을 응시하고 자신의 삶을 성찰", "exp": "대조·역설, 반복적 공간 상징(방)", "chars": "—", "core": "—"}, {"id": "l20", "genre": "현대시", "sub": "역사·현실 인식", "title": "나비와 광장", "book": "수특", "pp": "93", "emo": "불안·상처·희망에 대한 갈망", "att": "폭력적 현실을 인식하면서 희망을 질문", "exp": "나비/광장 상징, 이미지 대비, 질문형 종결", "chars": "—", "core": "—"}, {"id": "l21", "genre": "현대시", "sub": "상징·저항시", "title": "꽃 (이육사)", "book": "수특", "pp": "90", "emo": "절박한 기대·희망·의지", "att": "미래와 생명 회복의 가능성을 갈망", "exp": "설의·상징·반복", "chars": "—", "core": "—"}, {"id": "l22", "genre": "현대시", "sub": "여행·성장시", "title": "나비의 여행", "book": "수완", "pp": "167", "emo": "불안·공포·동경·안도", "att": "낯선 세계를 통과하는 여정에 감정을 투사", "exp": "여행 모티프·반복·환상적 이미지", "chars": "—", "core": "—"}, {"id": "l23", "genre": "현대시", "sub": "서정·감각시", "title": "오월 소식", "book": "수특", "pp": "84", "emo": "반가움·그리움·기대", "att": "멀리서 온 소식에 감응하고 대상을 그리워함", "exp": "감각적 이미지·소식의 매개·시각적 묘사", "chars": "—", "core": "—"}, {"id": "l24", "genre": "현대시", "sub": "정서 전환시", "title": "눈 오는 날에", "book": "수특", "pp": "99", "emo": "허무·절망에서 포근함·위안으로 이동", "att": "차가운 현실 속에서도 위안을 발견", "exp": "눈의 이미지, 역설적 표현, 정서 대비", "chars": "—", "core": "—"}, {"id": "l25", "genre": "현대시", "sub": "상실·시간성", "title": "사과밭을 지나며", "book": "수특", "pp": "319~320", "emo": "상실감·애도·수용", "att": "떠남 이후에도 남은 흔적을 응시", "exp": "사물 상징·시간의 압축·시각 이미지", "chars": "—", "core": "—"}]};
+const XL={"R": [{"id": "r01", "area": "인문", "sub": "서양철학·논리", "title": "프레게·러셀의 이름 이론", "book": "수특", "pp": "75~76", "concept": "뜻·지시체·동일성 명제 / 기술구 이론", "judge": "동일 지시체 ≠ 동일한 뜻; 고유명 분석과 기술구 분석을 구분"}, {"id": "r02", "area": "인문", "sub": "동양철학·성리학", "title": "장재·정이의 이기 관계", "book": "수특", "pp": "79~80", "concept": "이(理)·기(氣), 본연·기질, 두 학자별 이·기 관계", "judge": "이·기 선후·기능을 한 학자의 주장으로 뒤섞지 않기"}, {"id": "r03", "area": "인문", "sub": "건축·공간 철학 (사회 융합)", "title": "건축 구조·재료와 공간의 사회성", "book": "수특", "pp": "252~253", "concept": "구조 하중·재료 조건, 르페브르의 공간 구분", "judge": "물리적 구조의 기능과 사회적으로 경험·구성되는 공간 구별"}, {"id": "r04", "area": "인문", "sub": "과학철학·귀납", "title": "귀납의 한계", "book": "수완", "pp": "160~161", "concept": "귀납의 정당화, 흄·러셀·굿맨의 논증", "judge": "관찰 결과에서 필연적 일반법칙이 나오지는 않음"}, {"id": "r05", "area": "인문", "sub": "인식론·지각철학", "title": "지각 경험의 내용과 지각적 믿음의 정당화", "book": "수완", "pp": "187~188", "concept": "지각 경험의 옳음 조건, 개념주의·비개념주의", "judge": "지각 내용과 지각적 믿음의 정당화의 층위 구분"}, {"id": "r06", "area": "인문", "sub": "언어학·심리", "title": "스키너와 촘스키의 언어 학습 이론", "book": "수완", "pp": "212~213", "concept": "자극·반응·강화, 보편 문법·선천성, 창조적 문장 생성", "judge": "후천적 강화만으로 모든 언어 사용을 설명할 수 있는지"}, {"id": "r07", "area": "사회", "sub": "행정법", "title": "행정 대집행과 의무 이행", "book": "수특", "pp": "118~119", "concept": "공법상 대체적 작위 의무, 계고, 대집행 요건·절차", "judge": "사법상 의무·부작위 의무·대체 불가능한 의무와 대집행 구별"}, {"id": "r08", "area": "사회", "sub": "거시경제", "title": "고전학파·케인스·IS-LM / IS-MP 모형", "book": "수특", "pp": "122~123", "concept": "IS·LM·MP 곡선, 재정·통화 정책, 금리·소득 균형", "judge": "곡선 자체의 이동과 기존 곡선 위의 이동 구별"}, {"id": "r09", "area": "사회", "sub": "법철학·민법", "title": "법적 의제·성년의제", "book": "수특", "pp": "162~163", "concept": "법적 의제, 법률상 간주, 성년의제, 법적 효과", "judge": "실제 사실과 법적 효과를 구분; 의제와 추정 혼동 주의"}, {"id": "r10", "area": "사회", "sub": "세법·조세", "title": "조세법률주의·상속세·증여세", "book": "수특", "pp": "243~244", "concept": "조세법률주의, 열거주의·포괄주의, 증여·상속", "judge": "과세대상·납세의무자·세액 판단을 분리"}, {"id": "r11", "area": "사회", "sub": "형법·인과관계", "title": "형법의 인과관계와 조건설", "book": "수특", "pp": "262~263", "concept": "조건설·합법칙적 조건설, 필요조건·충분 원인", "judge": "독립적으로 충분한 원인과 인과관계 성립 논증을 구분"}, {"id": "r12", "area": "사회", "sub": "법해석·논리", "title": "법률 해석과 유추 적용", "book": "수특", "pp": "269~270", "concept": "법의 흠결, 유추·연역, 법적 관련성", "judge": "표면 유사성 ≠ 규범상 핵심 유사성"}, {"id": "r13", "area": "사회", "sub": "민법·법인", "title": "법인의 권리 능력과 유형", "book": "수완", "pp": "19~22", "concept": "법인격·권리/행위 능력, 법인 의제설·실재설, 사단/재단", "judge": "법인의 배상 책임·대표자의 책임·정관변경 조건"}, {"id": "r14", "area": "사회", "sub": "형법·책임", "title": "법률의 착오와 법적 책임", "book": "수완", "pp": "189~191", "concept": "법률의 착오, 위법성 인식 가능성, 정당한 이유", "judge": "법률 금지 사실을 몰랐다는 사실 자체가 곧 면책은 아님"}, {"id": "r15", "area": "사회", "sub": "헌법·언론법", "title": "언론의 자유와 법적 책임", "book": "수완", "pp": "214~216", "concept": "언론·출판의 자유, 사전 검열, 사후 책임, 규제 합헌성", "judge": "허가·검열과 등록·사후 법적 책임을 구별"}, {"id": "r16", "area": "과학기술", "sub": "생명과학·확률", "title": "하디-바인베르크 유전 평형", "book": "수특", "pp": "181~182", "concept": "대립유전자 빈도 p·q, p²+2pq+q², 평형 조건", "judge": "대립유전자 빈도·유전자형 빈도·표현형 빈도 구별"}, {"id": "r17", "area": "과학기술", "sub": "AI·정보", "title": "원-핫 인코딩과 단어 벡터 표현", "book": "수특", "pp": "194~195", "concept": "원-핫 벡터·분산 표현, 유클리드 거리·코사인 유사도", "judge": "차원·방향·거리·유사도를 혼동하지 않기"}, {"id": "r18", "area": "과학기술", "sub": "컴퓨터 구조", "title": "CPU·GPU의 병렬 연산", "book": "수특", "pp": "198~199", "concept": "스레드·블록·메모리, 직렬/병렬, 처리효율", "judge": "병렬 실행이 언제나 빠르지는 않음; 분기·메모리 제약 고려"}, {"id": "r19", "area": "과학기술", "sub": "생명과학·기체 물리", "title": "분압과 기체의 이동·폐포 산소 분압", "book": "수완", "pp": "164~166", "concept": "기체 분압, 기체 농도·용해도, 확산 방향·폐포 기체교환", "judge": "2027 6월 폐포 표면장력과 분압 법칙은 서로 다른 원리"}, {"id": "r20", "area": "과학기술", "sub": "정보보안·은닉", "title": "스테가노그래피", "book": "수완", "pp": "217~219", "concept": "LSB·PVD, 픽셀 값 차이, 메시지 은닉·추출", "judge": "암호화와 은닉의 목적 구별; 차잇값별 삽입 비트수"}], "L": [{"id": "l01", "genre": "고전산문", "sub": "가정소설", "title": "반씨전", "book": "수특", "pp": "129~130", "emo": "", "att": "", "exp": "대화·사건의 인과, 참소와 진실의 대비", "chars": "반씨·채씨·맹씨·양씨·위윤·채영·반옥", "core": "반씨를 시기하는 채씨·맹씨; 시어머니 양씨의 판단; 채영의 모함"}, {"id": "l02", "genre": "고전산문", "sub": "가문소설", "title": "현몽쌍룡기", "book": "수특", "pp": "133~135", "emo": "", "att": "", "exp": "인물별 정보 비대칭, 사건 경위에 대한 대화", "chars": "정채임·조용홍·조용창·춘앵·벽란·정참정", "core": "정채임은 조용홍의 정혼 상대; 시비들이 남장 도피 경위 설명"}, {"id": "l03", "genre": "고전산문", "sub": "가정·가문소설", "title": "창선감의록", "book": "수완", "pp": "146~147", "emo": "", "att": "", "exp": "서술자의 논평, 인물의 대화·고소와 실제 행위 대비", "chars": "화진·화춘·심씨·성부인·성준·범한·조씨", "core": "화진을 모함하는 심씨·화춘, 범한·조씨의 계략; 성부인의 보호"}, {"id": "l04", "genre": "고전산문", "sub": "애정·기이 서사", "title": "서해무릉기", "book": "수특", "pp": "125~127", "emo": "", "att": "", "exp": "변장·꿈의 예고·재회의 구조, 공간 묘사", "chars": "유생·최씨·계선·노승", "core": "여승으로 변장한 유생이 최씨를 찾아감; 계선이 전달자"}, {"id": "l05", "genre": "고전산문", "sub": "몽유록", "title": "대관재몽유록", "book": "수특", "pp": "138~139", "emo": "", "att": "", "exp": "꿈과 현실 층위 대조, 과장·우의·문단 인물의 등장", "chars": "심의(꿈속 화자)·김시습·이규보·두보·이백", "core": "문단 인물들이 꿈속 조정의 인물로 등장; 화자의 영달 경험"}, {"id": "l06", "genre": "고전산문", "sub": "영웅·기이소설", "title": "금방울전", "book": "수특", "pp": "142~143", "emo": "", "att": "", "exp": "꿈·예언·조력의 영웅 서사, 공로의 귀속", "chars": "금령·장해룡·공주·천자·황후", "core": "금령과 장해룡이 공주 구출에 공헌; 천자가 장해룡의 공적 인정"}, {"id": "l07", "genre": "고전산문", "sub": "우화·풍자소설", "title": "두껍전", "book": "수완", "pp": "193~194", "emo": "", "att": "", "exp": "동물 의인화, 허풍·과장·언변 경쟁", "chars": "두꺼비·여우·노루·토끼", "core": "동물들이 상좌의 자격을 두고 나이 경쟁; 두꺼비가 논쟁 참여"}, {"id": "l08", "genre": "고전산문", "sub": "애정·신분반전", "title": "옥단춘전", "book": "수특", "pp": "154~156", "emo": "", "att": "", "exp": "신분 은폐·반전, 인물 대화, 암행어사 출두", "chars": "이혈룡·옥단춘·김진희·역졸", "core": "옥단춘은 이혈룡을 구하고 도와줌; 김진희의 박대와 이혈룡의 어사 신분 반전"}, {"id": "l09", "genre": "고전산문", "sub": "역사·궁중 서사", "title": "인현왕후전", "book": "수특", "pp": "262~264", "emo": "", "att": "", "exp": "인물 반응·행동과 서술자 평가, 사건 순서", "chars": "인현 왕후·숙종·궁녀·대비", "core": "인현 왕후의 폐위 이후 생활과 복위 요청에 대한 반응"}, {"id": "l10", "genre": "고전시가", "sub": "강호·자연 가사", "title": "면앙정가", "book": "수특", "pp": "58~60", "emo": "자연 경관에 대한 감흥·풍류·감사", "att": "강호 생활의 즐거움과 임금 은혜를 함께 인식", "exp": "계절·공간 이동, 대구·열거, 생동감 있는 산수 묘사", "chars": "—", "core": "—"}, {"id": "l11", "genre": "고전시가", "sub": "강호·자연 가사", "title": "상춘곡", "book": "수완", "pp": "143", "emo": "자연 경관에 대한 감흥·풍류·감사", "att": "", "exp": "", "chars": "", "core": ""}, {"id": "l12", "genre": "고전시가", "sub": "여성 기행가사", "title": "부여노정기", "book": "수완", "pp": "60~61", "emo": "기쁨·자부심·가족애", "att": "아들의 부임을 기뻐하고 여정을 관찰", "exp": "노정(여정)의 순차적 서술, 경치·사건 열거", "chars": "—", "core": "—"}, {"id": "l13", "genre": "고전시가", "sub": "현실비판 가사", "title": "합강정가", "book": "수특", "pp": "244~246", "emo": "분노·비판·안타까움", "att": "민생 고통에 공감하고 탐관오리의 행태 비판", "exp": "대조·풍자·과장, 사회 현실의 구체적 서술", "chars": "—", "core": "—"}, {"id": "l14", "genre": "고전시가", "sub": "강호 연시조", "title": "풍계육가", "book": "수특", "pp": "268", "emo": "한가로움·만족·자연 친화", "att": "은거 생활에서 소박한 즐거움을 누림", "exp": "시조 연작·자연물·창/문의 대조", "chars": "—", "core": "—"}, {"id": "l15", "genre": "고전시가", "sub": "강호·교훈 가사", "title": "목동가", "book": "수특", "pp": "267~268", "emo": "현실 참여와 은거의 가치가 함께 제시됨", "att": "경세제민의 지향과 안분지족의 삶을 대비", "exp": "대화·대조·설의 등 논쟁적 발화", "chars": "—", "core": "—"}, {"id": "l16", "genre": "고전시가", "sub": "유배·연군가사", "title": "만분가", "book": "수완", "pp": "249~250", "emo": "원통함·억울함·임에 대한 그리움", "att": "유배 처지를 한탄하고 연군의 뜻을 드러냄", "exp": "고사 인용·가상 변신 소망·반복·감탄", "chars": "—", "core": "—"}, {"id": "l17", "genre": "고전시가", "sub": "교유·강호 연시조", "title": "월곡답가", "book": "수특", "pp": "51", "emo": "벗에 대한 그리움·친밀감", "att": "물리적 거리에도 벗을 잊지 않고 교유를 지향", "exp": "연작·대구·자연 이미지, 거리와 마음의 대비", "chars": "—", "core": "—"}, {"id": "l18", "genre": "고전시가", "sub": "강호 연시조", "title": "만흥", "book": "수특", "pp": "308", "emo": "자족·한가로움·감사", "att": "자연 속 만족과 군은에 대한 감사가 공존", "exp": "대구·설의·반복, 사물과 자연 묘사", "chars": "—", "core": "—"}, {"id": "l19", "genre": "현대시", "sub": "참여·성찰시", "title": "그 방을 생각하며", "book": "수특", "pp": "96", "emo": "혁명 좌절·허무·낯선 기쁨", "att": "좌절을 응시하고 자신의 삶을 성찰", "exp": "대조·역설, 반복적 공간 상징(방)", "chars": "—", "core": "—"}, {"id": "l20", "genre": "현대시", "sub": "역사·현실 인식", "title": "나비와 광장", "book": "수특", "pp": "93", "emo": "불안·상처·희망에 대한 갈망", "att": "폭력적 현실을 인식하면서 희망을 질문", "exp": "나비/광장 상징, 이미지 대비, 질문형 종결", "chars": "—", "core": "—"}, {"id": "l21", "genre": "현대시", "sub": "상징·저항시", "title": "꽃 (이육사)", "book": "수특", "pp": "90", "emo": "절박한 기대·희망·의지", "att": "미래와 생명 회복의 가능성을 갈망", "exp": "설의·상징·반복", "chars": "—", "core": "—"}, {"id": "l22", "genre": "현대시", "sub": "여행·성장시", "title": "나비의 여행", "book": "수완", "pp": "167", "emo": "불안·공포·동경·안도", "att": "낯선 세계를 통과하는 여정에 감정을 투사", "exp": "여행 모티프·반복·환상적 이미지", "chars": "—", "core": "—"}, {"id": "l23", "genre": "현대시", "sub": "서정·감각시", "title": "오월 소식", "book": "수특", "pp": "84", "emo": "반가움·그리움·기대", "att": "멀리서 온 소식에 감응하고 대상을 그리워함", "exp": "감각적 이미지·소식의 매개·시각적 묘사", "chars": "—", "core": "—"}, {"id": "l24", "genre": "현대시", "sub": "정서 전환시", "title": "눈 오는 날에", "book": "수특", "pp": "99", "emo": "허무·절망에서 포근함·위안으로 이동", "att": "차가운 현실 속에서도 위안을 발견", "exp": "눈의 이미지, 역설적 표현, 정서 대비", "chars": "—", "core": "—"}, {"id": "l25", "genre": "현대시", "sub": "상실·시간성", "title": "사과밭을 지나며", "book": "수특", "pp": "319~320", "emo": "상실감·애도·수용", "att": "떠남 이후에도 남은 흔적을 응시", "exp": "사물 상징·시간의 압축·시각 이미지", "chars": "—", "core": "—"}]};
 /* ===== 교사 보정 · 자체 정리 (원자료 아님은 표시) ===== */
 const NA_MARK=['—','-','–'];
 /* 엑셀 항목 보정 메모 */
@@ -319,8 +377,7 @@ const LNOTE={
  l05:{warn:'PDF 해설 미수록 작품 · 수특 본교재 지문으로 확인하세요.'},
  l08:{warn:'PDF 해설 미수록 작품 · 수특 본교재 지문으로 확인하세요.'},
  l21:{warn:'PDF 해설 미수록 작품 · 수특 90쪽에는 PDF상 이성부 「누룩」도 있어 같은 세트일 수 있습니다. 교재로 확인하세요.'},
- l11:{warn:'엑셀에는 ‘수특’·쪽수 공란, 운문 PDF에는 ‘수완 143쪽’으로 표기되어 있어 수완 143쪽으로 표시했습니다. 교재로 확인하세요.',
-      book:'수완',pp:'143',
+ l11:{warn:'엑셀 원본에는 ‘수특’·쪽수 공란이었으나, 운문 PDF와 EBS 통합표 모두 ‘수완 143쪽’이라 원자료를 고쳤습니다. 교재로 확인하세요.',
       add:{att:'벼슬을 떠나 자연에 묻혀 사는 삶에 만족하며 봄 경치를 즐김(안빈낙도)',exp:'공간 이동(수간모옥 → 시냇가 → 산봉우리)에 따른 시상 전개, 설의·대구·의인, 감정 이입'}},
  l25:{fix:'엑셀의 ‘애도’는 죽음을 떠올리게 할 수 있습니다. 운문 PDF 해설 흐름은 떠나보낸 상대에 대한 미련(1~2연) → 홀가분함(3연) → 오랜 미련의 극복(4~5연)입니다.'}
 };
@@ -436,8 +493,77 @@ const HOWTO={
  '고전산문':['인물 관계(조력자·적대자)를 먼저 그린다','누가 무엇을 알고 모르는가(정보 차이)가 사건을 움직이는가?','꿈·변장·예언 같은 장치가 어디에서 쓰이나?','서술자의 개입·논평이 있는가?'],
  '고전시가':['화자가 있는 곳과 처지(유배·은거·규방)','시상 전개 방식(공간 이동·계절 변화·시간 순서)','자연과 세속, 현재와 과거의 대비','설의·대구·영탄 등 표현의 효과'],
  '현대시':['화자의 정서가 처음과 끝에서 어떻게 달라지는가?','핵심 시어·소재가 상징하는 것은?','반복·대조·역설·감각적 이미지의 효과','시대 상황과 연결되는 부분이 있는가?'],
- '고전수필':['글쓴이의 경험과 깨달음을 구분','여정·장소 순서','글쓴이의 태도(관찰·성찰)']
+ '고전수필':['글쓴이의 경험과 깨달음을 구분','여정·장소 순서','글쓴이의 태도(관찰·성찰)'],
+ '극':['해설·지시문이 무대에서 무엇을 보여 주는가?','장면 전환과 시간 흐름(과거 회상 삽입 등)','인물의 대사에 드러나는 갈등과 처지']
 };
+
+/* ===== 2027 EBS 문학 연계 작품 중요도 통합표 (대치 라포에듀, 2026.11.) =====
+   사용 범위: 작품명·작가·교재 쪽·종합 등급·최상위 표시 자료 수·과거 기출 연도·올해 모평 연계 여부만.
+   주제·학습 메모·자료별(가~카) 평가표는 싣지 않음.
+   [고정ID, 갈래, 작품, 작가, 교재, 교재쪽, 종합등급, 최상위표시 자료 수, 과거 기출, 학습카드ID, 허브에 없던 작품의 고정 기록ID]
+   ※ e·x ID는 저장 키·주소로 쓰이므로 행 순서를 바꾸거나 작품을 추가해도 절대 바꾸지 말 것. 새 작품은 e35·x05부터. */
+const EBS_SRC='「2027 EBS 문학 연계 작품 중요도 통합표」(대치 라포에듀)';
+const EBS_RAW=[
+ ['e01','고전시가','면앙정가','송순','수특','58','S',10,'수능 2010·2003 · 모평 07.6','l10',''],
+ ['e02','고전시가','만흥','윤선도','수특','308','S',7,'모평 21.9·07.9','l18',''],
+ ['e03','고전시가','상춘곡','정극인','수완','143','S',6,'수능 2014·2011·2002 · 모평 20.9·08.9','l11',''],
+ ['e04','고전시가','만분가','조위','수완','249','S',6,'수능 2007 · 모평 19.6·15.9','l16',''],
+ ['e05','고전시가','월곡답가','정훈','수특','51','S',5,'','l17',''],
+ ['e06','고전시가','규원가','허난설헌','수특','261','S',5,'수능 2001 · 모평 22.9','',''],
+ ['e07','고전시가','부여노정기','연안 이씨','수완','60','S',5,'','l12',''],
+ ['e08','고전산문','현몽쌍룡기','작자 미상','수특','133','S',8,'','l02',''],
+ ['e09','고전산문','창선감의록','작자 미상','수완','146','S',8,'수능 2003 · 모평 16.9','l03',''],
+ ['e10','고전산문','반씨전','작자 미상','수특','129','S',7,'','l01',''],
+ ['e11','고전산문','서해무릉기','작자 미상','수특','125','S',5,'','l04',''],
+ ['e12','고전산문','장풍운전','작자 미상','수완','68','S',5,'','',''],
+ ['e13','고전산문','운영전','작자 미상','수완','172','S',5,'수능 2011','',''],
+ ['e14','현대시','흰 바람벽이 있어','백석','수완','151','S',7,'모평 04.9','',''],
+ ['e15','현대시','쉽게 씌어진 시','윤동주','수완','228','S',6,'','',''],
+ ['e16','현대시','눈 오는 날에','조지훈','수특','99','S',5,'','l24',''],
+ ['e17','현대소설','줄','이청준','수완','52','S',6,'','',''],
+ ['e18','극','한씨 연대기','황석영 원작 · 김석만·오인두 각색','수완','77','S',5,'','','x01'],
+ ['e19','고전시가','합강정가','작자 미상','수특','244','A',4,'','l13',''],
+ ['e20','고전시가','목동가','임유후','수특','267','A',3,'','l15',''],
+ ['e21','고전산문','금방울전','작자 미상','수특','142','A',3,'수능 2013','l06',''],
+ ['e22','고전산문','적벽가','작자 미상','수특','146','A',3,'수능 2007','','x02'],
+ ['e23','고전산문','옥단춘전','작자 미상','수특','154','A',3,'','l08',''],
+ ['e24','현대시','하나씩의 별','이용악','수특','32','A',4,'','',''],
+ ['e25','현대시','꽃','이육사','수특','90','A',3,'수능 1999','l21',''],
+ ['e26','현대시','그 방을 생각하며','김수영','수특','96','A',3,'','l19',''],
+ ['e27','현대시','참회록','윤동주','수특','288','A',3,'','',''],
+ ['e28','현대시','목계 장터','신경림','수완','45','A',3,'모평 04.6','','x03'],
+ ['e29','현대소설','소설가 구보 씨의 일일','박태원','수특','164','A',4,'','',''],
+ ['e30','현대소설','치숙','채만식','수특','173','A',3,'','',''],
+ ['e31','현대소설','불신시대','박경리','수특','181','A',3,'','','x04'],
+ ['e32','현대소설','해벽','이문구','수특','193','A',3,'','',''],
+ ['e33','현대소설','눈이 오면','임철우','수특','202','A',3,'모평 17.9','',''],
+ ['e34','현대소설','견습 환자','최인호','수완','246','A',3,'','','']
+];
+/* 올해 6·9월 모평에 EBS 작품이 그대로 연계 출제된 7편 — 등급과 별개 정보 */
+const MO_DONE=[
+ ['고전시가','만전춘별사','작자 미상','수특','48','6월'],
+ ['고전시가','임으란 회양 금성 오리나무 되고~','이정보','수특','55','6월'],
+ ['고전시가','속사미인곡','이진유','수특','67','9월'],
+ ['고전산문','금환기봉','작자 미상','수특','322','9월'],
+ ['현대시','그 나무','김명인','수특','106','6월'],
+ ['현대시','잘 익은 사과','김혜순','수특','298','9월'],
+ ['현대소설','나룻배 이야기','하근찬','수특','177','6월']
+];
+/* 올해 모평에 같은 작가의 '다른' 작품이 나온 EBS 수록작 — 이 작품 자체는 출제되지 않음 */
+const MO_AUTHOR=[
+ ['현대시','오월 소식','정지용','수특','84','6월','「노인과 꽃」','l23'],
+ ['현대시','멸치','김기택','수특','293','6월','「나무」',''],
+ ['고전수필','능양시집 서','박지원','수특','274','9월','「공작관문고 자서」',''],
+ ['고전수필','한정록 서','허균','수특','327','6월','「홍길동전」','']
+];
+/* 수능완성 학습맵(suwan.html) 카드 번호 — 작품명|작가로 직접 대조해 지정 (제목 문자열 자동 매칭 아님) */
+const SUWAN_N={
+ '창선감의록|작자 미상':31,'두껍전|작자 미상':43,'상춘곡|정극인':29,'부여노정기|연안 이씨':26,'만분가|조위':61,'나비의 여행|정한모':35,
+ '장풍운전|작자 미상':27,'운영전|작자 미상':39,'강로전|권칙':50,'동경|오정희':32,'견습 환자|최인호':58,'양과자갑|염상섭':49,'무명로|김성한':44,
+ '도령마루의 까마귀|현기영':38,'줄|이청준':25,'황강구곡가|권섭':48,'쉽게 씌어진 시|윤동주':56,'흰 바람벽이 있어|백석':33,'한계령을 위한 연가|문정희':47,
+ '이별가|박목월':60,'기항지 1|황동규':57,'목계 장터|신경림':24,'한씨 연대기|황석영 원작 · 김석만·오인두 각색':28
+};
+const MAP_URL='suwan.html';
 
 </script>
 <script>
@@ -448,7 +574,7 @@ function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor
 const pick=a=>a[Math.floor(Math.random()*a.length)];
 
 /* ===== 데이터 준비 ===== */
-const GCOLOR={'고전산문':'#c27a2c','고전수필':'#a0662a','현대소설':'#d2493f','고전시가':'#178a7a','현대시':'#7a4fc4','인문':'#2f5bd3','사회':'#0f8a6c','과학기술':'#c2410c'};
+const GCOLOR={'극':'#0e7490','고전산문':'#c27a2c','고전수필':'#a0662a','현대소설':'#d2493f','고전시가':'#178a7a','현대시':'#7a4fc4','인문':'#2f5bd3','사회':'#0f8a6c','과학기술':'#c2410c'};
 const FL={core:'관계·사건 핵심',chars:'주요 인물',emo:'주요 정서',att:'화자 태도',exp:'주요 표현 방식'};
 const isProse=g=>g==='고전산문';
 const L=XL.L.map(x=>{const n=LNOTE[x.id]||{};const o={...x,kind:'lit'};
@@ -456,18 +582,36 @@ const L=XL.L.map(x=>{const n=LNOTE[x.id]||{};const o={...x,kind:'lit'};
  o.addf={};if(n.add)for(const k in n.add)if(!val(x,k)){o[k]=n.add[k];o.addf[k]=1}
  const c=CAT.find(c=>c.xl===x.id);o.cat=c||null;o.author=c?c.author:(AUTHOR_EXTRA[x.id]||'');o.note=n;return o});
 const R=XL.R.map(x=>({...x,kind:'read',genre:x.area}));
-const byId=id=>L.find(x=>x.id===id)||R.find(x=>x.id===id)||CAT.find(x=>x.id===id);
+const byId=id=>L.find(x=>x.id===id)||R.find(x=>x.id===id)||CAT.find(x=>x.id===id)||XITEMS.find(x=>x.id===id);
 function val(x,k){const v=String(x[k]??'').trim();return NA_MARK.includes(v)?'':v}
 function fieldState(x,k){const v=String(x[k]??'').trim();return NA_MARK.includes(v)?'na':v?'ok':'blank'}
 const litFields=x=>isProse(x.genre)?['chars','core','exp']:['emo','att','exp'];
 const qFields=x=>(isProse(x.genre)?['core','exp']:['emo','att','exp']).filter(k=>val(x,k));
 const pdfLoc=c=>c?`${c.pdf==='p'?'산문':'운문'} PDF ${c.pg}쪽부터`:'';
 
+/* ===== EBS 통합표: 작품 단위 연결 (기존 ID는 그대로, 허브에 없던 작품만 x01~ 새 ID) ===== */
+const findCat=(t,a)=>CAT.find(c=>c.title===t&&c.author===a)||null;
+const EBS=EBS_RAW.map(r=>{const [id,genre,title,author,book,pp,grade,cnt,past,lid,xid]=r,c=findCat(title,author);
+ const e={id,genre,title,author,book,pp,grade,cnt,past,lid:lid||'',kid:c?c.id:'',xid:(!lid&&!c)?xid:'',map:SUWAN_N[title+'|'+author]||0};
+ if(!e.lid&&!e.kid&&!e.xid)console.error('EBS 기록 ID 없음:',title);
+ e.sid=e.lid||e.kid||e.xid;e.ids=[e.lid,e.kid,e.xid].filter(Boolean);return e});
+const XITEMS=EBS.filter(e=>e.xid).map(e=>({id:e.xid,kind:'ebs',eid:e.id,genre:e.genre,title:e.title,author:e.author,book:e.book,pp:e.pp}));
+const EBS_OF={};EBS.forEach(e=>e.ids.forEach(id=>EBS_OF[id]=e));
+const mapN=x=>x?(SUWAN_N[x.title+'|'+x.author]||0):0;
+const ebsDone=e=>e.ids.some(id=>S.done[id]);
+const ebsWeak=e=>e.ids.some(id=>S.weak[id]);
+const GRANK={S:0,A:1};
+/* 같은 작품의 기록 ID 묶음: 학습 카드(l) ↔ 색인(k) ↔ 중요 S·A(x). 어느 화면에서 바꾸든 함께 바뀜 */
+function linkIds(id){const s=new Set([id]);const e=EBS_OF[id];if(e)e.ids.forEach(i=>s.add(i));
+ const c=CAT.find(c=>c.id===id);if(c&&c.xl)s.add(c.xl);CAT.forEach(c=>{if(c.xl===id)s.add(c.id)});return [...s]}
+function setDone(id,v){linkIds(id).forEach(i=>S.done[i]=v);save()}
+function setWeak(id,v){linkIds(id).forEach(i=>S.weak[i]=v);save()}
+
 /* ===== 저장 ===== */
 const KEY='kor-final-v2';let storageOK=true;
 function blank(){return{done:{},weak:{},hist:{},five:{},ui:{fs:1,theme:'auto'}}}
 let S=blank();
-const ALLIDS=new Set([...L,...R,...CAT].map(x=>x.id));
+const ALLIDS=new Set([...L,...R,...CAT,...XITEMS].map(x=>x.id)); /* XITEMS: 허브에 없던 S·A 작품(x01~) — 저장·백업·복원 대상 */
 function validate(d){
  if(!d||typeof d!=='object')return null;const o=blank();
  for(const [k,v] of Object.entries(d.done||{}))if(ALLIDS.has(k))o.done[k]=!!v;
@@ -483,10 +627,14 @@ try{localStorage.setItem('__t','1');localStorage.removeItem('__t');
  else{const old=JSON.parse(localStorage.getItem('korean-final-master-v1')||'null');
   if(old){for(const [k,v] of Object.entries(old.done||{}))if(ALLIDS.has(k))S.done[k]=!!v;for(const [k,v] of Object.entries(old.level||{}))if(ALLIDS.has(k)&&v==='weak')S.weak[k]=true;if(old.theme==='dark')S.ui.theme='dark'}}
 }catch(e){storageOK=false}
+function syncLinked(){for(const k of ['done','weak'])for(const [id,v] of Object.entries(S[k]))if(v)linkIds(id).forEach(i=>S[k][i]=true)}
+syncLinked();
 function save(){if(!storageOK)return;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){storageOK=false;toast('학습 기록을 저장하지 못했습니다. 설정에서 백업하세요.',5000)}}
 function applyUI(){document.documentElement.style.fontSize=[14,16,18,20][S.ui.fs]+'px';if(S.ui.theme==='auto')document.documentElement.removeAttribute('data-theme');else document.documentElement.dataset.theme=S.ui.theme}
 applyUI();
-let toastT;function toast(m,ms=2200){let t=$('#toast');if(!t){t=document.createElement('div');t.id='toast';t.className='toast';t.setAttribute('role','status');document.body.appendChild(t)}t.textContent=m;t.classList.remove('hide');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.add('hide'),ms)}
+let toastT,toastFn=null;function toast(m,ms=2200,act){let t=$('#toast');if(!t){t=document.createElement('div');t.id='toast';t.className='toast';t.setAttribute('role','status');document.body.appendChild(t)}
+ toastFn=act?act.fn:null;t.innerHTML=`<span>${esc(m)}</span>`+(act?`<button class="tbtn" onclick="toastUndo()">${esc(act.label)}</button>`:'');t.classList.remove('hide');clearTimeout(toastT);toastT=setTimeout(()=>{t.classList.add('hide');toastFn=null},act?Math.max(ms,4500):ms)}
+function toastUndo(){const f=toastFn;toastFn=null;$('#toast')?.classList.add('hide');if(f)f()}
 
 /* ===== 학습 상태 ===== */
 const keyItem=k=>k.split('-')[1];
@@ -509,15 +657,16 @@ window.addEventListener('hashchange',render);
 const PAGES={};
 function render(){R0=parse();closeDrawer();(PAGES[R0.name]||PAGES.home)(...R0.args);nav();window.scrollTo(0,0);$('#app').focus({preventScroll:true})}
 function rerender(){const y=scrollY;(PAGES[R0.name]||PAGES.home)(...R0.args);window.scrollTo(0,y)}
-const MENU=[['home','⌂','처음'],['lit','📚','문학 25'],['read','🧠','독서 20'],['quiz','✅','문제 풀기'],['review','★','복습 노트'],['cat','🗂','작품 색인 75'],['plan','📆','D-day 계획'],['five','⚡','5분 점검'],['search','🔍','통합 검색'],['settings','⚙','설정·출처']];
+const MENU=[['home','⌂','처음'],['ebs','🔥','중요 S·A 34'],['lit','📚','문학 25'],['read','🧠','독서 20'],['quiz','✅','문제 풀기'],['review','★','복습 노트'],['cat','🗂','작품 색인 75'],['map','📘','수능완성 맵'],['plan','📆','D-day 계획'],['five','⚡','5분 점검'],['search','🔍','통합 검색'],['settings','⚙','설정·출처']];
+function navTo(k){if(k==='map'){if(R0.name==='ebs')keepPos();location.href=MAP_URL;return}go(k)}
 function nav(){
  const cur=R0.name==='print'?'settings':R0.name;
- $('#side').innerHTML='<h4>학습 메뉴</h4>'+MENU.map(([k,ic,n])=>`<button class="navbtn ${cur===k?'on':''}" onclick="go('${k}')"><span>${ic}</span>${n}</button>`).join('');
- const b=[['home','⌂','처음'],['lit','📚','문학'],['read','🧠','독서'],['quiz','✅','문제'],['review','★','복습']];
+ $('#side').innerHTML='<h4>학습 메뉴</h4>'+MENU.map(([k,ic,n])=>`<button class="navbtn ${cur===k?'on':''}" onclick="navTo('${k}')"><span>${ic}</span>${n}</button>`).join('');
+ const b=[['home','⌂','처음'],['ebs','🔥','S·A'],['lit','📚','문학'],['read','🧠','독서'],['quiz','✅','문제'],['review','★','복습']];
  $('#bnav').innerHTML=b.map(([k,ic,n])=>`<button class="${cur===k?'on':''}" onclick="go('${k}')"><b>${ic}</b>${n}</button>`).join('');
 }
 function openDrawer(){const d=document.createElement('div');d.className='drawer';d.id='drawer';d.onclick=e=>{if(e.target===d)closeDrawer()};
- d.innerHTML=`<div class="sheet" role="dialog" aria-label="전체 메뉴"><div class="grip"></div><div class="row between"><h2 style="margin:0">전체 메뉴</h2><button class="ibtn" onclick="closeDrawer()" aria-label="닫기">✕</button></div><div class="tools" style="margin-top:.8rem">${MENU.map(([k,ic,n])=>`<button class="tool" onclick="go('${k}')"><b>${ic}</b>${n}</button>`).join('')}</div></div>`;document.body.appendChild(d)}
+ d.innerHTML=`<div class="sheet" role="dialog" aria-label="전체 메뉴"><div class="grip"></div><div class="row between"><h2 style="margin:0">전체 메뉴</h2><button class="ibtn" onclick="closeDrawer()" aria-label="닫기">✕</button></div><div class="tools" style="margin-top:.8rem">${MENU.map(([k,ic,n])=>`<button class="tool" onclick="navTo('${k}')"><b>${ic}</b>${n}</button>`).join('')}</div></div>`;document.body.appendChild(d)}
 function closeDrawer(){$('#drawer')?.remove()}
 function flashTo(id){requestAnimationFrame(()=>{const el=document.getElementById(id);if(!el)return;el.querySelector('details')?.setAttribute('open','');OPEN.add(id);el.scrollIntoView({block:'start',behavior:'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')})}
 
@@ -526,25 +675,28 @@ PAGES.home=function(){
  const wrongN=[...L,...R].filter(x=>curWrong(x.id)).length,plan=buildPlan();
  const areas=[['독서',R],['고전산문',L.filter(x=>x.genre==='고전산문')],['고전시가',L.filter(x=>x.genre==='고전시가')],['현대시',L.filter(x=>x.genre==='현대시')],['작품 색인',CAT]];
  const base=CAT.filter(c=>c.tier==='기본');
+ const eD=EBS.filter(ebsDone).length;
  $('#app').innerHTML=`
  <section class="hero"><div class="tiny" style="opacity:.85;font-weight:800;letter-spacing:.1em">2027학년도 수능 · 국어 연계 우선 학습</div>
   <div class="big">${DDAY>0?'D-'+DDAY:DDAY===0?'오늘 수능!':'수능 종료'}</div>
   <p>${DDAY>0?'2026년 11월 19일(목) · 아는 작품을 “설명할 수 있는” 작품으로':'끝까지 수고했어요'}</p>
   ${plan.days.length?`<div class="todayline"><b>오늘 할 것</b><br>${plan.days[0].items.slice(0,4).map(x=>esc(x.title)).join(' · ')||'오답·헷갈림 복습'}</div>`:''}
   <button class="btn" onclick="go('plan')">오늘 계획 보기 →</button></section>
+ <button class="ebsgo" onclick="go('ebs')"><span class="ic">🔥</span><span class="tx"><strong>중요 문학 S·A ${EBS.length}</strong><small>여러 참고자료에서 최상위 표시가 겹친 작품부터 · 공부함 ${eD}/${EBS.length}</small><span class="mini"><i style="width:${eD/EBS.length*100}%"></i></span></span><span class="ar">→</span></button>
+ <a class="ebsgo alt" href="${MAP_URL}"><span class="ic">📘</span><span class="tx"><strong>수능완성 학습맵 64</strong><small>수완 문학·독서 전체 · 해설 링크 · 진로 연결</small></span><span class="ar">→</span></a>
  <div class="grid2" style="margin-bottom:1rem">
   <button class="act" onclick="go('lit')"><b>📚</b><strong>문학 25작품</strong><span>정서·태도·표현·인물 카드</span></button>
   <button class="act" onclick="go('read')"><b>🧠</b><strong>독서 20제재</strong><span>개념과 구별할 판단</span></button>
   <button class="act" onclick="go('quiz')"><b>✅</b><strong>문제 풀기</strong><span>판단 O/X · 작품 연결</span></button>
   <button class="act" onclick="go('review')"><b>★</b><strong>복습 노트</strong><span>${wrongN?'지금 '+wrongN+'개 항목 복습 필요':'아직 오답 없음'}</span></button>
  </div>
- <div class="card"><h2>내 진도</h2>${areas.map(([n,l])=>{const s=stat(l);return `<div class="pr" style="--era:${GCOLOR[n]||'#2f5bd3'}"><span>${n}</span><span class="bar"><i style="width:${s.d/s.n*100}%"></i></span><span class="muted">${s.d}/${s.n}</span></div>`}).join('')}</div>
+ <div class="card"><h2>내 진도</h2><div class="pr" style="--era:#e0453a"><span>🔥 중요 S·A</span><span class="bar"><i style="width:${eD/EBS.length*100}%"></i></span><span class="muted">${eD}/${EBS.length}</span></div>${areas.map(([n,l])=>{const s=stat(l);return `<div class="pr" style="--era:${GCOLOR[n]||'#2f5bd3'}"><span>${n}</span><span class="bar"><i style="width:${s.d/s.n*100}%"></i></span><span class="muted">${s.d}/${s.n}</span></div>`}).join('')}</div>
  <div class="card"><h2>무조건 기본 베이스 <span class="badge">PDF 기준</span></h2><p class="small muted" style="margin-top:-.3rem">우선순위를 매기기 전에 먼저 정리할 작품</p>
   <div class="tagl">${base.map(c=>`<button class="${S.done[c.id]?'done':''}" onclick="go('${c.xl?'lit/'+c.xl:'cat/'+c.id}')">${esc(c.title)}</button>`).join('')}</div></div>
- <div class="note">📌 <b>이 도구의 범위</b><br>학습 카드 45개(엑셀 문학 25·독서 20)와 PDF 수록 작품 색인 75개입니다. 강사 PDF의 해설 본문은 저작권 때문에 싣지 않았으니, 색인의 쪽수를 보고 PDF·교재를 함께 펴세요. 우선순위 목록은 출제를 보장하지 않습니다.</div>
- <h2>더 많은 도구</h2><div class="tools">${MENU.slice(5).map(([k,ic,n])=>`<button class="tool" onclick="go('${k}')"><b>${ic}</b>${n}</button>`).join('')}</div>
+ <div class="note">📌 <b>이 도구의 범위</b><br>학습 카드 45개(엑셀 문학 25·독서 20), PDF 수록 작품 색인 75개, 중요 문학 S·A 34편(통합표의 등급·쪽수만)입니다. 강사 PDF와 통합표의 해설·메모는 저작권 때문에 싣지 않았으니, 쪽수를 보고 교재를 함께 펴세요. 우선순위·등급은 출제를 보장하지 않습니다.</div>
+ <h2>더 많은 도구</h2><div class="tools">${MENU.slice(6).map(([k,ic,n])=>`<button class="tool" onclick="navTo('${k}')"><b>${ic}</b>${n}</button>`).join('')}</div>
  ${storageOK?'':'<div class="note warn" style="margin-top:1rem">이 브라우저에서는 학습 기록이 저장되지 않습니다. 끝내기 전에 설정에서 백업하세요.</div>'}
- <div class="foot">자료: 엑셀 「수능 예상 작품」(문학 25·독서 20) · 「최서희의 파이널 체크포인트」 산문 편 23쪽·운문 편 21쪽(색인만)</div>`;
+ <div class="foot">자료: 엑셀 「수능 예상 작품」(문학 25·독서 20) · 「최서희의 파이널 체크포인트」 산문 편 23쪽·운문 편 21쪽(색인만) · ${EBS_SRC}(등급·쪽수만)</div>`;
 };
 
 /* ===== 학습 카드 ===== */
@@ -559,6 +711,7 @@ function fieldHTML(x,k){
 function cardHTML(x){
  const id='card-'+x.id,isLit=x.kind==='lit',color=GCOLOR[x.genre]||'#2f5bd3';
  const badges=[`<span class="badge era" style="background:${color}">${esc(x.genre)}</span>`,`<span class="badge">${esc(x.book||'교재 미기재')} ${esc(x.pp?x.pp+'쪽':'쪽수 미기재')}</span>`];
+ const eb=EBS_OF[x.id];if(eb)badges.splice(1,0,`<span class="badge g${eb.grade}" title="${esc(EBS_SRC)} 종합 등급">통합표 ${eb.grade}</span>`);
  if(isLit)badges.push(x.cat?`<span class="badge">해설: ${pdfLoc(x.cat)}</span>`:'<span class="badge add">PDF 해설 없음</span>');
  if(x.note&&x.note.warn)badges.push('<span class="badge" style="background:var(--trap-bg);color:var(--trap);border:0">자료 확인 필요</span>');
  if(curWrong(x.id))badges.push('<span class="badge" style="background:var(--bad-bg);color:var(--bad);border:0">복습 필요</span>');
@@ -568,10 +721,10 @@ function cardHTML(x){
  return `<article class="icard" id="${id}" style="--era:${color}"><div class="hd"><div class="row">${badges.join('')}</div>
   <div class="ttl">${esc(x.title)}</div><div class="au">${esc([x.author,x.sub].filter(Boolean).join(' · '))}</div></div>
   <details ${OPEN.has(id)?'open':''} ontoggle="this.open?OPEN.add('${id}'):OPEN.delete('${id}')"><summary>학습 내용</summary><div class="bd">${body}${notes}</div></details>
-  <div class="acts"><button class="btn ${S.done[x.id]?'on':''}" onclick="toggleDone('${x.id}')">${S.done[x.id]?'✓ 공부함':'□ 공부함'}</button><button class="btn ${S.weak[x.id]?'wk':''}" onclick="toggleWeak('${x.id}')">${S.weak[x.id]?'★ 헷갈림':'☆ 헷갈림'}</button>${hasQ?`<button class="btn" onclick="go('quiz/item/${x.id}')">✅ 문제</button>`:''}</div></article>`;
+  <div class="acts"><button class="btn ${S.done[x.id]?'on':''}" onclick="toggleDone('${x.id}')">${S.done[x.id]?'✓ 공부함':'□ 공부함'}</button><button class="btn ${S.weak[x.id]?'wk':''}" onclick="toggleWeak('${x.id}')">${S.weak[x.id]?'★ 헷갈림':'☆ 헷갈림'}</button>${hasQ?`<button class="btn" onclick="go('quiz/item/${x.id}')">✅ 문제</button>`:''}${isLit&&mapN(x)?`<a class="btn" href="${MAP_URL}#n=${mapN(x)}">📘 수완 맵</a>`:''}</div></article>`;
 }
-function toggleDone(id){S.done[id]=!S.done[id];save();refreshCard(id)}
-function toggleWeak(id){S.weak[id]=!S.weak[id];save();refreshCard(id)}
+function toggleDone(id){setDone(id,!S.done[id]);refreshCard(id)}
+function toggleWeak(id){setWeak(id,!S.weak[id]);refreshCard(id)}
 function refreshCard(id){const el=document.getElementById('card-'+id);if(el)el.outerHTML=cardHTML(byId(id));else rerender()}
 function setF(page,obj,k,v){obj[k]=v;if(R0.args.length)go(page);else rerender()}
 document.addEventListener('click',e=>{const k=e.target.closest('.blind .k');if(k)k.classList.toggle('show')});
@@ -595,21 +748,101 @@ function openAll(v){document.querySelectorAll('.icard details').forEach(d=>{d.op
 PAGES.lit=t=>listPage('lit',t);
 PAGES.read=t=>listPage('read',t);
 
+/* ===== 중요 문학 S·A 34 ===== */
+let ebsF={gr:'전체',g:'전체',b:'전체',q:''};
+try{const v=JSON.parse(sessionStorage.getItem('kor-final-ebsF')||'null');if(v&&typeof v==='object')ebsF={...ebsF,...v}}catch(e){}
+function saveEbsF(){try{sessionStorage.setItem('kor-final-ebsF',JSON.stringify(ebsF))}catch(e){}}
+function keepPos(){try{sessionStorage.setItem('kor-final-ebsY',JSON.stringify({y:Math.round(scrollY),t:Date.now()}))}catch(e){}}
+function setE(k,v){ebsF[k]=v;saveEbsF();if(R0.args.length)go('ebs');else rerender()}
+const EGEN=['고전시가','고전산문','현대시','현대소설','극'];
+function ebsActive(){return ebsF.gr!=='전체'||ebsF.g!=='전체'||ebsF.b!=='전체'||!!(ebsF.q||'').trim()}
+function ebsView(ignoreStatus){const q=norm(ebsF.q||'');return ebsList().filter(e=>(ebsF.gr==='전체'||(ignoreStatus&&(ebsF.gr==='안 한'||ebsF.gr==='다시'))||(ebsF.gr==='다시'?ebsWeak(e):ebsF.gr==='안 한'?!ebsDone(e):e.grade===ebsF.gr))&&(ebsF.g==='전체'||e.genre===ebsF.g)&&(ebsF.b==='전체'||e.book===ebsF.b)&&(!q||norm(e.title+e.author+e.genre).includes(q)))}
+function ebsListHTML(){const v=ebsView();return v.map(ebsCard).join('')||`<div class="card muted">${ebsF.gr==='다시'?'☆ 다시 보기로 표시한 작품이 없어요.':ebsF.gr==='안 한'?'🎉 조건에 맞는 작품을 모두 공부했어요!':'조건에 맞는 작품이 없어요.'}${ebsActive()?' <button class="btn soft mini" onclick="resetEbsF()">조건 초기화</button>':''}</div>`}
+function resetEbsF(){ebsF={gr:'전체',g:'전체',b:'전체',q:''};saveEbsF();if(R0.args.length)go('ebs');else rerender()}
+function ebsSearch(v){ebsF.q=v;saveEbsF();const el=$('#elist');if(el)el.innerHTML=ebsListHTML();const c=$('#ecount');if(c)c.textContent=ebsView().length}
+function ebsList(){return EBS.map((e,i)=>({e,i})).sort((a,b)=>(ebsWeak(b.e)-ebsWeak(a.e))||(GRANK[a.e.grade]-GRANK[b.e.grade])||(a.i-b.i)).map(o=>o.e)}
+function toggleEbs(id,k){const e=EBS.find(x=>x.id===id);if(!e)return;
+ const undo=(f,old)=>({label:'취소',fn:()=>{f(e.sid,old);rerender()}});
+ if(k==='done'){const old=ebsDone(e),v=!old;setDone(e.sid,v);
+  const g=EBS.filter(x=>x.grade===e.grade),d=g.filter(ebsDone).length;
+  toast(v?(d===g.length?`🎉 ${e.grade}등급 ${g.length}편을 모두 공부했어요!`:`✓ 「${e.title}」 공부함 · ${e.grade} ${d}/${g.length}`):`「${e.title}」 공부함을 해제했어요`,3000,undo(setDone,old))}
+ else{const old=ebsWeak(e),v=!old;setWeak(e.sid,v);toast(v?'☆ 다시 보기에 넣었어요 — 목록 맨 위로 옮겨요':'다시 보기에서 뺐어요',3000,undo(setWeak,old))}
+ if(R0.args.length){history.replaceState(null,'','#/ebs');R0={name:'ebs',args:[]}}
+ rerender()}
+function pickEbs(all){
+ const base=(all?EBS:ebsView(true)).filter(e=>!ebsDone(e)),sP=base.filter(e=>e.grade==='S'),src=sP.length?sP:base;
+ if(!src.length){if(!all&&EBS.some(e=>!ebsDone(e)))toast('지금 조건에는 안 한 작품이 없어요.',4000,{label:'전체에서 고르기',fn:()=>pickEbs(true)});else toast('34편 모두 공부했어요. ☆ 다시 보기 작품을 복습하세요!',3500);return}
+ const e=pick(src);if(all){ebsF={gr:'전체',g:'전체',b:'전체',q:''};saveEbsF()}
+ if(R0.args.length||!document.getElementById('e-'+e.id))go('ebs/'+e.id+(all?'':'/keep'));else flashTo('e-'+e.id)}
+function ebsCard(e){
+ const color=GCOLOR[e.genre]||'#2f5bd3',d=ebsDone(e),w=ebsWeak(e),C1=e.kid?byId(e.kid):null,links=[];
+ if(e.lid)links.push(`<button class="lk" onclick="keepPos();go('lit/${e.lid}')">📚 학습 카드</button>`);
+ if(C1)links.push(`<button class="lk" onclick="keepPos();go('cat/${e.kid}')">🗂 색인 · ${pdfLoc(C1)}</button>`);
+ if(e.map)links.push(`<a class="lk" href="${MAP_URL}#n=${e.map}" onclick="keepPos()">📘 수완 학습맵</a>`);
+ return `<article class="ecard ${d?'done':''}" id="e-${e.id}" style="--era:${color}">
+ <div class="eh"><span class="eg g${e.grade}" aria-label="${e.grade}등급">${e.grade}</span><div class="et"><div class="t">${esc(e.title)}</div><div class="au">${esc(e.author)}</div></div></div>
+ <div class="em"><span class="badge era" style="background:${color}">${esc(e.genre)}</span><span class="badge">${e.book==='수특'?'수능특강':'수능완성'} ${esc(e.pp)}쪽</span><span class="badge">11종 중 ${e.cnt}곳</span>${e.past?`<span class="badge past">과거 기출 ${esc(e.past)}</span>`:''}</div>
+ <div class="el">${links.join('')||`<span class="nolink">허브 학습 자료 없음 · <b>교재 ${esc(e.pp)}쪽</b> 지문으로 확인하세요</span>`}</div>
+ <div class="ea"><button class="btn ${d?'on':''}" onclick="toggleEbs('${e.id}','done')" aria-pressed="${d}">${d?'✓ 공부함':'□ 공부함'}</button><button class="btn ${w?'wk':''}" onclick="toggleEbs('${e.id}','weak')" aria-pressed="${w}">${w?'★ 다시 보기':'☆ 다시 보기'}</button></div>
+ </article>`}
+function moRow(m,kind){
+ const [g,t,a,b,pp,mo,other,lid]=m,c=findCat(t,a),color=GCOLOR[g]||'#2f5bd3';
+ const btn=lid?`<button class="lk" onclick="keepPos();go('lit/${lid}')">📚 학습 카드</button>`:c?`<button class="lk" onclick="keepPos();go('cat/${c.id}')">🗂 색인</button>`:'';
+ return `<div class="morow" style="--era:${color}"><div><div class="t">${esc(t)} <span class="tiny muted">${esc(a)}</span></div>
+ <div class="m"><span class="badge era" style="background:${color}">${esc(g)}</span> ${b==='수특'?'수능특강':'수능완성'} ${esc(pp)}쪽 · ${kind==='done'?`<b class="mob">${mo} 모평 연계 출제</b>`:`${mo} 모평에 같은 작가 ${esc(other)} 출제`}</div></div>${btn}</div>`}
+PAGES.ebs=function(target,keep){
+ if(target&&target!=='mo'&&!keep){ebsF={gr:'전체',g:'전체',b:'전체',q:''};saveEbsF()}
+ const sL=EBS.filter(e=>e.grade==='S'),aL=EBS.filter(e=>e.grade==='A');
+ const dAll=EBS.filter(ebsDone).length,dS=sL.filter(ebsDone).length,dA=aL.filter(ebsDone).length,wN=EBS.filter(ebsWeak).length,uN=EBS.length-dAll;
+ const grs=[['전체','전체 '+EBS.length],['S','S '+sL.length],['A','A '+aL.length],['다시','☆ 다시 보기 '+wN],['안 한','□ 안 한 것 '+uN]];
+ $('#app').innerHTML=`<section class="ehero"><div class="tiny" style="opacity:.9;font-weight:800;letter-spacing:.08em">수특·수완 문학 167편 중</div>
+  <h1>🔥 중요 문학 S·A ${EBS.length}</h1><p>참고자료 11종을 대조한 통합표에서 <b>최상위 표시가 많이 겹친 작품</b>만 모았어요. 남은 시간, 여기서부터!</p>
+  <div class="epg"><div><div class="num">${dAll}<span>/${EBS.length}</span></div><div class="tiny" style="opacity:.85">공부함</div></div>
+  <div><div class="pr2"><span>S</span><span class="bar"><i style="width:${dS/sL.length*100}%"></i></span><span>${dS}/${sL.length}</span></div><div class="pr2"><span>A</span><span class="bar"><i style="width:${dA/aL.length*100}%"></i></span><span>${dA}/${aL.length}</span></div></div></div>
+  <button class="btn epick" onclick="pickEbs()">🎲 지금 조건에서 안 한 작품 골라 줘</button><div class="tiny" style="opacity:.85;margin-top:.35rem;text-align:center">안 한 S 먼저 → 없으면 A · 출제 확률과는 무관한 편의 기능</div></section>
+ <details class="note elegend"><summary><b>S·A는 무슨 뜻일까? (30초)</b></summary>
+  <ul class="small"><li><b>S</b> = 참고자료 11종 중 <b>5곳 이상</b>이 그 작품을 최상위로 표시 · <b>A</b> = 3~4곳</li>
+  <li>“11종 중 ○곳”은 그 수예요. <b>출제 확률이 아니라 자료들의 의견이 겹친 정도</b>입니다. 이 목록에 없는 작품도 출제될 수 있어요.</li>
+  <li>목록 순서는 <b>☆ 다시 보기 → S → A</b>, 같은 등급 안에서는 갈래 순서일 뿐 중요도 차이가 아니에요.</li>
+  <li><b>□ 공부함</b> = 인물 관계(또는 화자의 처지)·정서·표현을 <b>내 말로 설명할 수 있음</b>. 문학 카드·색인의 ‘공부함’과 같은 기록으로 연결돼요.</li>
+  <li><b>과거 기출</b>의 ‘모평 07.6’ = 2007학년도 6월 모의평가.</li></ul></details>
+ <div class="chips">${grs.map(([k,n])=>`<button class="chip ${ebsF.gr===k?'on':''}" onclick="setE('gr','${k}')">${n}</button>`).join('')}</div>
+ <div class="chips">${['전체',...EGEN].map(g=>`<button class="chip ${ebsF.g===g?'on':''}" onclick="setE('g','${g}')">${g==='전체'?'모든 갈래':g} ${g==='전체'?'':EBS.filter(e=>e.genre===g).length}</button>`).join('')}</div>
+ <div class="seg">${['전체','수특','수완'].map(b=>`<button class="${ebsF.b===b?'on':''}" onclick="setE('b','${b}')">${b==='전체'?'교재 전체':b==='수특'?'수능특강 '+EBS.filter(e=>e.book==='수특').length:'수능완성 '+EBS.filter(e=>e.book==='수완').length}</button>`).join('')}</div>
+ <input class="sbox esbox" type="search" placeholder="🔍 작품명·작가로 찾기 (예: 윤동주, 운영전)" value="${esc(ebsF.q||'')}" oninput="ebsSearch(this.value)" autocomplete="off">
+ <div class="row between ecrit"><span class="small muted"><b id="ecount">${ebsView().length}</b>편 표시${ebsActive()?' · <button class="linkbtn" onclick="resetEbsF()">조건 초기화</button>':''}</span><span class="row" style="gap:.3rem"><button class="btn soft mini" onclick="go('print/ebs')">🖨 체크리스트</button></span></div>
+ <p class="crit">✔ <b>□ 공부함</b>은 교재를 펴서 핵심(인물·정서·표현)을 <b>내 말로 설명할 수 있을 때</b> 눌러요. 수완 학습맵의 ‘읽었어요’와는 따로 기록돼요.</p>
+ <div id="elist">${ebsListHTML()}</div>
+ <section class="card" id="mo" style="scroll-margin-top:5rem"><h2>📝 올해 모평에 이미 나온 EBS 작품 ${MO_DONE.length}</h2>
+  <p class="small muted" style="margin-top:-.3rem">S·A 등급과는 <b>별개 정보</b>예요. 모평에 그대로 나온 대목이 수능에 다시 나오는 경우는 드물다고들 하지만 보장은 없어요. 같은 작품의 <b>다른 대목</b>이나 같은 작가의 다른 작품으로 연계될 수도 있으니, 흐름만 가볍게 훑어 두세요.</p>
+  ${MO_DONE.map(m=>moRow(m,'done')).join('')}
+  <h3 style="margin-top:1.1rem">같은 작가의 다른 작품이 모평에 나온 EBS 작품</h3>
+  <p class="small muted" style="margin-top:-.3rem">이 작품 자체가 출제된 것은 아니에요. 작가의 다른 작품과 함께 정리해 두면 좋아요.</p>
+  ${MO_AUTHOR.map(m=>moRow(m,'author')).join('')}</section>
+ <p class="tiny muted" style="text-align:center">자료: ${EBS_SRC} · 등급·쪽수·기출 연도만 옮겼고 주제·해설 메모는 싣지 않았어요.</p>`;
+ if(target==='mo')requestAnimationFrame(()=>document.getElementById('mo')?.scrollIntoView({block:'start'}));
+ else if(target){if(keep)history.replaceState(null,'','#/ebs/'+target);flashTo('e-'+target)}
+ else{let p=null;try{p=JSON.parse(sessionStorage.getItem('kor-final-ebsY')||'null');sessionStorage.removeItem('kor-final-ebsY')}catch(e){}
+  if(p&&p.y&&Date.now()-p.t<36e5)setTimeout(()=>window.scrollTo(0,p.y),0)}
+};
+
 /* ===== 작품 색인 ===== */
-let catF={g:'전체',b:'전체',base:false};
+let catF={g:'전체',b:'전체',base:false,ebs:false};
+const catEbs=c=>EBS_OF[c.id]||(c.xl?EBS_OF[c.xl]:null);
 PAGES.cat=function(target){
- if(target){catF={g:'전체',b:'전체',base:false}}
+ if(target){catF={g:'전체',b:'전체',base:false,ebs:false}}
  const gs=['전체','고전산문','고전수필','현대소설','고전시가','현대시'];
- const view=CAT.filter(c=>(catF.g==='전체'||c.genre===catF.g)&&(catF.b==='전체'||c.book===catF.b)&&(!catF.base||c.tier==='기본'));
+ const view=CAT.filter(c=>(catF.g==='전체'||c.genre===catF.g)&&(catF.b==='전체'||c.book===catF.b)&&(!catF.base||c.tier==='기본')&&(!catF.ebs||catEbs(c)));
  const s=stat(CAT);
  $('#app').innerHTML=`<h1>PDF 작품 색인 75</h1><p class="sub">PDF 두 권에 실린 작품 목록입니다. 해설 본문은 싣지 않았으니 PDF 쪽수를 보고 함께 펴세요. 공부함 ${s.d}/${s.n}</p>
- <div class="chips">${gs.map(g=>`<button class="chip ${catF.g===g?'on':''}" onclick="setF('cat',catF,'g','${g}')">${g} ${g==='전체'?CAT.length:CAT.filter(c=>c.genre===g).length}</button>`).join('')}</div>
+ <div class="chips"><button class="chip ${catF.ebs?'on':''}" onclick="setF('cat',catF,'ebs',!catF.ebs)">🔥 S·A만 ${CAT.filter(catEbs).length}</button>${gs.map(g=>`<button class="chip ${catF.g===g?'on':''}" onclick="setF('cat',catF,'g','${g}')">${g} ${g==='전체'?CAT.length:CAT.filter(c=>c.genre===g).length}</button>`).join('')}</div>
+ <p class="tiny muted" style="margin:-.3rem 0 .6rem">S·A 34편 중 이 색인에 없는 작품(한씨 연대기·적벽가·옥단춘전·꽃·목계 장터·불신시대)은 <a href="#/ebs">중요 S·A</a>에서 보세요.</p>
  <div class="seg">${['전체','수특','수완'].map(b=>`<button class="${catF.b===b?'on':''}" onclick="setF('cat',catF,'b','${b}')">${b==='전체'?'교재 전체':b==='수특'?'수능특강':'수능완성'}</button>`).join('')}<button class="${catF.base?'on':''}" onclick="setF('cat',catF,'base',!catF.base)">기본만</button></div>
  <div class="note small">쪽수 두 가지를 구분하세요. <b>교재 ○쪽</b> = EBS 수특·수완 본교재, <b>PDF ○쪽</b> = 첨부 해설 PDF의 쪽(해당 작품이 시작되는 쪽).</div>
  ${catF.g!=='전체'&&HOWTO[catF.g]?`<details class="card"><summary><b>📖 ${catF.g} 읽는 법</b></summary><ul class="small">${HOWTO[catF.g].map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details>`:''}
- <div class="card">${view.map(c=>`<div class="row-c" id="${c.id}" style="--era:${GCOLOR[c.genre]}"><div><div class="t">${esc(c.title)} <span class="badge era" style="background:${GCOLOR[c.genre]}">${c.genre}</span> ${c.tier==='기본'?'<span class="badge" style="background:var(--one-bg);color:var(--one-ink);border:0">기본 베이스</span>':`<span class="badge">${esc(c.tier)}</span>`}</div>
-  <div class="m">${esc(c.author)} · ${c.book==='수특'?'수능특강':'수능완성'} ${esc(c.pp)}쪽 · ${pdfLoc(c)}</div>${c.xl?`<button class="btn soft" style="margin-top:.35rem;min-height:2.1rem;padding:.25rem .65rem;font-size:.8rem" onclick="go('lit/${c.xl}')">학습 카드 있음 →</button>`:''}</div>
-  <button class="chk ${S.done[c.id]?'on':''}" onclick="S.done['${c.id}']=!S.done['${c.id}'];save();this.classList.toggle('on')" aria-label="공부함 표시">✓</button></div>`).join('')||'<p class="muted">조건에 맞는 작품이 없어요.</p>'}</div>`;
+ <div class="card">${view.map(c=>{const eb=catEbs(c),mn=mapN(c);return `<div class="row-c" id="${c.id}" style="--era:${GCOLOR[c.genre]}"><div><div class="t">${esc(c.title)} <span class="badge era" style="background:${GCOLOR[c.genre]}">${c.genre}</span> ${eb?`<span class="badge g${eb.grade}">통합표 ${eb.grade}</span> `:''}${c.tier==='기본'?'<span class="badge" style="background:var(--one-bg);color:var(--one-ink);border:0">기본 베이스</span>':`<span class="badge">${esc(c.tier)}</span>`}</div>
+  <div class="m">${esc(c.author)} · ${c.book==='수특'?'수능특강':'수능완성'} ${esc(c.pp)}쪽 · ${pdfLoc(c)}</div>${c.xl||mn?`<div class="row" style="gap:.35rem;margin-top:.35rem">${c.xl?`<button class="btn soft mini" onclick="go('lit/${c.xl}')">학습 카드 있음 →</button>`:''}${mn?`<a class="btn soft mini" href="${MAP_URL}#n=${mn}">📘 수완 맵</a>`:''}</div>`:''}</div>
+  <button class="chk ${S.done[c.id]?'on':''}" onclick="setDone('${c.id}',!S.done['${c.id}']);rerender()" aria-label="공부함 표시" aria-pressed="${!!S.done[c.id]}">✓</button></div>`}).join('')||'<p class="muted">조건에 맞는 작품이 없어요.</p>'}</div>`;
  if(target)flashTo(target);
 };
 
@@ -643,7 +876,7 @@ PAGES.quiz=function(mode,arg){
    else if(mode==='link'){qs=shuffle(L.filter(x=>!arg||arg==='전체'||x.genre===arg).flatMap(x=>qFields(x).map(f=>mkLink(x,f))).filter(Boolean)).slice(0,15);title='작품 연결 퀴즈'}
    else if(mode==='mix'){qs=shuffle([...shuffle(R).slice(0,7).map(mkReadQ),...shuffle(L.flatMap(x=>qFields(x).map(f=>mkLitOX(x,f)))).slice(0,7),...shuffle(L.flatMap(x=>qFields(x).map(f=>mkLink(x,f))).filter(Boolean)).slice(0,6)]);title='섞어서 20문항'}
    else if(mode==='item'){const x=byId(arg);qs=itemQs(arg);title=x?`「${x.title}」 문제`:''}
-   else if(mode==='wrong'){qs=shuffle(Object.entries(S.hist).filter(([,h])=>h.last===0).map(([k])=>qFromKey(k)).filter(Boolean));title='현재 오답 다시 풀기'}
+   else if(mode==='wrong'){qs=shuffle(Object.entries(S.hist).filter(([,h])=>h.last===0).map(([k])=>qFromKey(k)).filter(Boolean));title='틀린 개념 다시 점검'}
    if(!qs.length){toast('풀 문제가 없어요.');return go('quiz')}
    startQS(title,qs);QS.key=key;
   }
@@ -658,7 +891,8 @@ PAGES.quiz=function(mode,arg){
   <button class="act" onclick="go('quiz/link/전체')"><b>🔗</b><strong>작품 연결 퀴즈</strong><span>설명 보고 작품 고르기 · 15문항</span></button>
   <button class="act" onclick="go('quiz/mix/'+Date.now())"><b>🎲</b><strong>섞어서 20문항</strong><span>독서+문학 랜덤</span></button>
  </div>
- <button class="btn block ${wrongN?'pri':''}" style="margin:.8rem 0" onclick="go('quiz/wrong/'+Date.now())" ${wrongN?'':'disabled'}>★ 현재 오답 ${wrongN}개 다시 풀기</button>
+ <button class="btn block ${wrongN?'pri':''}" style="margin:.8rem 0" onclick="go('quiz/wrong/'+Date.now())" ${wrongN?'':'disabled'}>★ 틀린 개념 ${wrongN}개 다시 점검</button>
+ <p class="tiny muted" style="margin:-.4rem 0 .8rem">틀렸던 작품·항목으로 문제를 <b>새로 만들어</b> 내요. 같은 문장이 그대로 나오지는 않을 수 있어요.</p>
  <div class="card"><h3>갈래별로 풀기</h3>
   <div class="tagl">${['고전산문','고전시가','현대시'].map(g=>`<button onclick="go('quiz/litox/${g}')">${g} O/X</button><button onclick="go('quiz/link/${g}')">${g} 연결</button>`).join('')}${['인문','사회','과학기술'].map(g=>`<button onclick="go('quiz/read/${g}')">독서 ${g}</button>`).join('')}</div></div>
  <div class="note small">⚠️ 이 문제들은 엑셀 정리 내용으로 만든 <b>자체 확인 문제</b>예요. 실제 수능처럼 지문을 읽고 푸는 5지선다는 아니니, 개념·작품 정보를 점검하는 용도로 쓰세요. 독서 O/X는 엑셀의 ‘반드시 구별할 판단’을 문장으로 바꾼 것입니다.</div>`;
@@ -666,7 +900,6 @@ PAGES.quiz=function(mode,arg){
 function drawQ(){
  if(QS.i>=QS.qs.length)return drawResult();
  const q=QS.qs[QS.i],a=QS.ans[QS.i],n=QS.qs.length,done=a!==undefined;
- if(QS.i>=n)return drawResult();
  const ok=done&&a===q.a;
  let body;
  if(q.type==='ox'){
@@ -675,7 +908,7 @@ function drawQ(){
   body=`<div class="quote">${esc(q.quote)}</div>${q.opts.map((o,i)=>`<button class="choice ${done?(i===q.a?'ok':i===a?'no':''):''}" onclick="answerQ(${i})" ${done?'disabled':''}><span class="n">${i+1}</span><span>「${esc(o.t)}」${done?`<small>${esc(o.why)}</small>`:''}</span></button>`).join('')}`;
  }
  const exp=done?`<div class="fb ${ok?'ok':'no'}" role="status"><span class="v">${ok?'⭕ 정답!':'❌ 아쉬워요'}</span> ${q.type==='ox'?`정답은 <b>${q.a?'O':'X'}</b>`:`정답은 <b>${q.a+1}번 「${esc(q.opts[q.a].t)}」</b>`}<div style="margin-top:.3rem">${esc(q.ex||'각 선택지 아래에 작품별 설명을 붙였어요. 정답 작품과 다른 점을 비교해 보세요.')}</div>
-  <div class="row"><button class="btn" onclick="go('${byId(q.item).kind==='read'?'read':'lit'}/${q.item}')">관련 카드 보기</button><button class="btn ${S.weak[q.item]?'wk':''}" onclick="S.weak['${q.item}']=!S.weak['${q.item}'];save();drawQ()">${S.weak[q.item]?'★ 헷갈림':'☆ 헷갈림'}</button></div></div>`:'';
+  <div class="row"><button class="btn" onclick="go('${byId(q.item).kind==='read'?'read':'lit'}/${q.item}')">관련 카드 보기</button><button class="btn ${S.weak[q.item]?'wk':''}" onclick="setWeak('${q.item}',!S.weak['${q.item}']);drawQ()">${S.weak[q.item]?'★ 헷갈림':'☆ 헷갈림'}</button></div></div>`:'';
  $('#app').innerHTML=`<div class="row between"><h1 style="margin:0;font-size:1.3rem">${esc(QS.title)}</h1><button class="btn soft" onclick="go('quiz')">그만하기</button></div>
  <div class="row between small muted" style="margin:.6rem 0 .3rem"><span>${QS.i+1} / ${n}</span><span>맞힘 ${QS.ans.filter((x,i)=>x===QS.qs[i].a).length}</span></div>
  <div class="bar" style="--era:var(--brand);margin-bottom:.8rem"><i style="width:${(QS.i+(done?1:0))/n*100}%"></i></div>
@@ -700,13 +933,14 @@ PAGES.review=function(){
  const items=[...L,...R];
  const cw=items.filter(x=>curWrong(x.id)),wk=items.filter(x=>S.weak[x.id]&&!curWrong(x.id)),solved=items.filter(x=>everWrong(x.id)&&!curWrong(x.id));
  const row=(x,kind)=>{const hs=histOf(x.id),w=hs.reduce((a,[,h])=>a+h.w,0),n=hs.reduce((a,[,h])=>a+h.n,0);return `<div class="row-c"><div><div class="t">${esc(x.title)} <span class="badge era" style="background:${GCOLOR[x.genre]}">${esc(x.genre)}</span></div><div class="m">${n?`푼 횟수 ${n} · 틀림 ${w}`:'아직 안 풂'}${kind==='cw'?` · 현재 오답 ${hs.filter(([,h])=>h.last===0).length}문항`:''}</div>
-  <div class="row" style="margin-top:.35rem"><button class="btn pri" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="go('quiz/item/${x.id}')">다시 풀기</button><button class="btn soft" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="go('${x.kind==='read'?'read':'lit'}/${x.id}')">카드 보기</button>${kind==='wk'?`<button class="btn soft" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="S.weak['${x.id}']=false;save();rerender()">해제</button>`:''}</div></div></div>`};
+  <div class="row" style="margin-top:.35rem"><button class="btn pri" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="go('quiz/item/${x.id}')">다시 풀기</button><button class="btn soft" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="go('${x.kind==='read'?'read':'lit'}/${x.id}')">카드 보기</button>${kind==='wk'?`<button class="btn soft" style="min-height:2.2rem;font-size:.8rem;padding:.3rem .7rem" onclick="setWeak('${x.id}',false);rerender()">해제</button>`:''}</div></div></div>`};
  const wrongKeys=Object.values(S.hist).filter(h=>h.last===0).length;
  $('#app').innerHTML=`<h1>복습 노트</h1><p class="sub">최근에 틀린 것, 직접 표시한 것, 이미 극복한 것을 나눠 보여 줘요.</p>
  <div class="grid2" style="grid-template-columns:repeat(3,1fr);margin-bottom:.9rem">${[['현재 오답',cw.length,'var(--bad)'],['헷갈림',wk.length,'#c98a00'],['극복함',solved.length,'var(--good)']].map(([a,b,c])=>`<div class="card" style="margin:0;text-align:center;padding:.7rem"><div class="tiny muted">${a}</div><b style="font-size:1.5rem;color:${c}">${b}</b></div>`).join('')}</div>
- ${wrongKeys?`<button class="btn pri block" style="margin-bottom:.9rem" onclick="go('quiz/wrong/'+Date.now())">현재 오답 ${wrongKeys}문항 한 번에 다시 풀기</button>`:''}
+ ${wrongKeys?`<button class="btn pri block" style="margin-bottom:.9rem" onclick="go('quiz/wrong/'+Date.now())">틀린 개념 ${wrongKeys}개 한 번에 다시 점검</button>`:''}
  <div class="card"><h2>😵 현재 오답 <span class="tiny muted">마지막 풀이에서 틀린 항목</span></h2>${cw.map(x=>row(x,'cw')).join('')||'<p class="muted">없어요. 다시 맞히면 자동으로 빠집니다.</p>'}</div>
  <div class="card"><h2>🤔 직접 표시한 헷갈림</h2>${wk.map(x=>row(x,'wk')).join('')||'<p class="muted">카드나 문제에서 ☆를 누르면 모여요.</p>'}</div>
+ ${(()=>{const ew=EBS.filter(e=>!e.lid&&ebsWeak(e));return `<div class="card"><h2>🔥 다시 볼 S·A 작품 <span class="tiny muted">학습 카드가 없는 작품</span></h2>${ew.length?`<div class="tagl">${ew.map(e=>`<button onclick="go('ebs/${e.id}')">${esc(e.title)} · ${e.grade}</button>`).join('')}</div>`:'<p class="muted">중요 S·A 화면에서 ☆ 다시 보기를 누르면 모여요.</p>'}</div>`})()}
  <div class="card"><h2>😎 극복한 과거 오답</h2>${solved.map(x=>row(x,'sv')).join('')||'<p class="muted">틀렸다가 다시 맞힌 항목이 여기 쌓여요.</p>'}</div>
  <div class="card noprint"><h3>인쇄</h3><div class="grid2"><button class="btn" onclick="go('print/weak')">복습 항목 카드</button><button class="btn" onclick="go('print/cards')">전체 학습 카드</button></div></div>`;
 };
@@ -719,6 +953,7 @@ function buildPlan(){
  [...L,...R].filter(x=>curWrong(x.id)).forEach(add);
  [...L,...R].filter(x=>S.weak[x.id]).forEach(add);
  CAT.filter(c=>c.tier==='기본'&&!S.done[c.id]).forEach(c=>add(c.xl?byId(c.xl):c));
+ ['S','A'].forEach(g=>EBS.filter(e=>e.grade===g&&!ebsDone(e)).forEach(e=>add(byId(e.sid))));
  L.filter(x=>!S.done[x.id]).forEach(add);R.filter(x=>!S.done[x.id]).forEach(add);
  CAT.filter(c=>!c.xl&&!S.done[c.id]).forEach(add);
  const work=days>1?days-1:1,per=Math.ceil(q.length/work)||0,out=[];
@@ -729,19 +964,22 @@ function buildPlan(){
 PAGES.plan=function(){
  const p=buildPlan();
  if(p.post){$('#app').innerHTML=`<h1>복습 모드</h1><p class="sub">수능이 끝났어요. 정말 수고했어요! 기록은 그대로 남아 있습니다.</p><button class="btn pri" onclick="go('review')">복습 노트 보기</button>`;return}
- $('#app').innerHTML=`<h1>D-day 학습 계획</h1><p class="sub">남은 ${DDAY}일 · 복습 필요 → 기본 베이스 → 안 한 카드 → 색인 순서로 하루 약 ${p.per}개씩 자동 배분. 공부함 표시를 하면 다시 계산돼요.</p>
+ $('#app').innerHTML=`<h1>D-day 학습 계획</h1><p class="sub">남은 ${DDAY}일 · 복습 필요 → 기본 베이스 → 중요 S → 중요 A → 안 한 카드 → 색인 순서로 하루 약 ${p.per}개씩 자동 배분. 공부함 표시를 하면 다시 계산돼요.</p>
  ${p.days.map((d,i)=>{const dt=new Date(kstToday()+i*864e5);const lbl=`${dt.getUTCMonth()+1}/${dt.getUTCDate()}`;return `<div class="card dayc"><div class="row between"><b>${i===0?'오늘':i+1+'일째'} · ${lbl}</b><span class="tiny muted">${d.last?'시험 전날':d.items.length+'개'}</span></div>
- ${d.last?'<p class="small" style="margin:.4rem 0 0">새 작품보다 <b>복습 노트·기본 베이스·5분 점검</b>만. 일찍 자기!</p><div class="tagl"><button onclick="go(\'review\')">복습 노트</button><button onclick="go(\'five\')">5분 점검</button></div>':`<div class="tagl">${d.items.map(x=>`<button class="${S.done[x.id]?'done':''}" onclick="go('${x.kind==='lit'?'lit/'+x.id:x.kind==='read'?'read/'+x.id:'cat/'+x.id}')">${esc(x.title)}</button>`).join('')||'<span class="small muted">할 일 없음 — 오답 복습!</span>'}</div>`}</div>`}).join('')}
+ ${d.last?'<p class="small" style="margin:.4rem 0 0">새 작품보다 <b>복습 노트·기본 베이스·5분 점검</b>만. 일찍 자기!</p><div class="tagl"><button onclick="go(\'review\')">복습 노트</button><button onclick="go(\'five\')">5분 점검</button></div>':`<div class="tagl">${d.items.map(x=>`<button class="${S.done[x.id]?'done':''}" onclick="go('${x.kind==='lit'?'lit/'+x.id:x.kind==='read'?'read/'+x.id:x.kind==='ebs'?'ebs/'+x.eid:'cat/'+x.id}')">${EBS_OF[x.id]?'🔥':''}${esc(x.title)}</button>`).join('')||'<span class="small muted">할 일 없음 — 오답 복습!</span>'}</div>`}</div>`}).join('')}
  <div class="note small">계획은 기록에 따른 추천 순서이며 출제 가능성 예측이 아닙니다. 하루 공부 시간에 맞게 조절하세요.</div>`;
 };
 
 /* ===== 5분 점검 ===== */
 const FIVE=['기본 베이스 고전시가: 면앙정가·만흥·규원가·상춘곡의 화자와 주제','기본 베이스 현대시: 와사등·참회록·쉽게 씌어진 시·흰 바람벽이 있어의 정서 흐름','산문: 인물 관계 → 사건 인과 → 서술 방식(서술자 개입·시점)','운문: 화자 처지 → 정서 변화 → 시어·표현의 효과','독서: 조건·예외·개념끼리의 구별(“언제나”, “반드시”가 나오면 의심)','선지 판단: 답의 근거를 지문에서 찾아 밑줄 → 없으면 지운다'];
 PAGES.five=function(){
- const w=[...L,...R].filter(x=>curWrong(x.id)||S.weak[x.id]);
+ const w=[...L,...R].filter(x=>curWrong(x.id)||S.weak[x.id]),ew=EBS.filter(e=>!e.lid&&ebsWeak(e));
  $('#app').innerHTML=`<section class="five"><div class="tiny" style="opacity:.8;font-weight:800;letter-spacing:.1em">시험장 직전</div><h1 style="color:#fff;margin:0">⚡ 5분 점검</h1></section>
  ${FIVE.map((t,i)=>`<label class="fitem ${S.five[i]?'done':''}"><input type="checkbox" ${S.five[i]?'checked':''} onchange="S.five[${i}]=this.checked;save();this.parentNode.classList.toggle('done',this.checked)"><span>${esc(t)}</span></label>`).join('')}
- <div class="card"><h3>내 복습 필요 항목 ${w.length}개</h3><div class="tagl">${w.map(x=>`<button onclick="go('${x.kind==='read'?'read':'lit'}/${x.id}')">${esc(x.title)}</button>`).join('')||'<span class="small muted">없어요 👍</span>'}</div></div>
+ ${(()=>{const t3=[...EBS.filter(e=>ebsWeak(e)),...EBS.filter(e=>e.grade==='S'&&!ebsDone(e)&&!ebsWeak(e)),...EBS.filter(e=>e.grade==='A'&&!ebsDone(e)&&!ebsWeak(e))].slice(0,3);
+  const how=g=>['고전산문','현대소설','극'].includes(g)?'인물 관계 → 사건 흐름 → 주제':'화자의 처지 → 정서 변화 → 표현 효과';
+  return t3.length?`<div class="card"><h3>🔥 S·A 3편, 30초씩 말로 설명하기</h3><p class="small muted" style="margin-top:-.3rem">☆ 다시 보기 → 안 한 S → 안 한 A 순서로 골랐어요. 막히면 눌러서 확인!</p>${t3.map(e=>`<button class="res" onclick="go('ebs/${e.id}')"><b>${esc(e.title)}</b> <span class="badge g${e.grade}">${e.grade}</span><div class="small muted">${esc(e.genre)} · ${e.book==='수특'?'수능특강':'수능완성'} ${esc(e.pp)}쪽</div><div class="small">${how(e.genre)}</div></button>`).join('')}</div>`:''})()}
+ <div class="card"><h3>내 복습 필요 항목 ${w.length+ew.length}개</h3><div class="tagl">${w.map(x=>`<button onclick="go('${x.kind==='read'?'read':'lit'}/${x.id}')">${esc(x.title)}</button>`).join('')}${ew.map(e=>`<button onclick="go('ebs/${e.id}')">🔥${esc(e.title)}</button>`).join('')}${w.length+ew.length?'':'<span class="small muted">없어요 👍</span>'}</div></div>
  <button class="btn block" onclick="S.five={};save();PAGES.five()">체크 모두 해제</button>`;
 };
 
@@ -753,20 +991,24 @@ function buildIdx(){const I=[];
  L.forEach(x=>I.push({g:'문학 카드',x,text:[x.title,x.author,x.genre,x.sub,x.book,x.pp,...Object.keys(FL).map(k=>val(x,k))].join(' '),path:'lit/'+x.id}));
  R.forEach(x=>I.push({g:'독서 카드',x,text:[x.title,x.area,x.sub,x.book,x.pp,x.concept,x.judge,READ_OX[x.id][1]].join(' '),path:'read/'+x.id}));
  CAT.forEach(c=>I.push({g:'작품 색인',x:c,text:[c.title,c.author,c.genre,c.book,c.pp,c.tier].join(' '),path:c.xl?'lit/'+c.xl:'cat/'+c.id}));
+ EBS.forEach(e=>I.push({g:'중요 S·A',x:{...e,kind:'ebs'},text:[e.title,e.author,e.genre,e.book,e.pp,e.grade+'등급','중요',e.past?'기출 '+e.past:''].join(' '),path:'ebs/'+e.id}));
+ MO_DONE.forEach(m=>I.push({g:'모평 연계',x:{genre:m[0],title:m[1],author:m[2],book:m[3],pp:m[4],kind:'mo',mo:m[5]},text:[m[1],m[2],m[0],m[3],m[4],m[5]+' 모평 연계 출제'].join(' '),path:'ebs/mo'}));
+ MO_AUTHOR.forEach(m=>I.push({g:'모평 연계',x:{genre:m[0],title:m[1],author:m[2],book:m[3],pp:m[4],kind:'moa',mo:m[5],other:m[6]},text:[m[1],m[2],m[0],m[3],m[4],m[5]+' 모평 같은 작가 출제',m[6]].join(' '),path:'ebs/mo'}));
  I.forEach(i=>i.n=norm(i.text));return I}
+const SGROUPS=['중요 S·A','문학 카드','독서 카드','작품 색인','모평 연계'];
 PAGES.search=function(){
- $('#app').innerHTML=`<h1>통합 검색</h1><p class="sub">문학 카드·독서 카드·작품 색인 75를 한 번에 찾아요. 작가 이름, 개념, 교재 쪽수도 돼요.</p>
- <input id="sq" class="sbox" type="search" placeholder="예: 윤동주, 행정 대집행, 수완 143, 화자 태도" value="${esc(lastQ)}" oninput="runSearch(this.value)" autocomplete="off">
- <div class="chips" style="margin-top:.6rem">${['윤동주','대집행','귀납','현대소설','상춘곡','유배','코사인'].map(w=>`<button class="chip" onclick="$('#sq').value='${w}';runSearch('${w}')">${w}</button>`).join('')}</div><div id="sr"></div>`;
+ $('#app').innerHTML=`<h1>통합 검색</h1><p class="sub">중요 S·A·문학 카드·독서 카드·작품 색인·모평 연계 작품을 한 번에 찾아요. 작가 이름, 개념, 교재 쪽수도 돼요. 수능완성 학습맵은 <a href="${MAP_URL}">맵 안의 검색</a>을 쓰세요.</p>
+ <input id="sq" class="sbox" type="search" placeholder="예: 윤동주, S등급, 행정 대집행, 수완 143" value="${esc(lastQ)}" oninput="runSearch(this.value)" autocomplete="off">
+ <div class="chips" style="margin-top:.6rem">${['S등급','윤동주','대집행','귀납','현대소설','상춘곡','유배','코사인'].map(w=>`<button class="chip" onclick="$('#sq').value='${w}';runSearch('${w}')">${w}</button>`).join('')}</div><div id="sr"></div>`;
  runSearch(lastQ);setTimeout(()=>$('#sq')?.focus(),50);
 };
 function runSearch(q){lastQ=q;const el=$('#sr');if(!el)return;IDX=IDX||buildIdx();
  const toks=q.trim().split(/\s+/).map(norm).filter(Boolean);if(!toks.length){el.innerHTML='';return}
  const res=IDX.filter(i=>toks.every(t=>i.n.includes(t)));
- const groups=['문학 카드','독서 카드','작품 색인'];
- el.innerHTML=`<p class="small muted">문학 ${res.filter(r=>r.g===groups[0]).length} · 독서 ${res.filter(r=>r.g===groups[1]).length} · 색인 ${res.filter(r=>r.g===groups[2]).length}</p>`+
+ const groups=SGROUPS;
+ el.innerHTML=`<p class="small muted">${groups.map(g=>`${g} ${res.filter(r=>r.g===g).length}`).join(' · ')}</p>`+
  groups.map(g=>{const rs=res.filter(r=>r.g===g);return rs.length?`<h3 style="margin-top:1rem">${g}</h3>`+rs.map(r=>{const x=r.x;const sub=x.kind==='read'?x.area+' · '+x.sub:[x.author,x.genre,(x.book||'')+' '+(x.pp?x.pp+'쪽':'')].filter(Boolean).join(' · ');
-  const snip=x.kind==='read'?x.concept:x.kind==='lit'?[val(x,'emo'),val(x,'core')].filter(Boolean).join(' / '):'';
+  const snip=x.kind==='read'?x.concept:x.kind==='lit'?[val(x,'emo'),val(x,'core')].filter(Boolean).join(' / '):x.kind==='ebs'?`통합표 ${x.grade} · 11종 중 ${x.cnt}곳 최상위${x.past?' · 과거 기출 '+x.past:''}`:x.kind==='mo'?`올해 ${x.mo} 모평 연계 출제`:x.kind==='moa'?`올해 ${x.mo} 모평에 같은 작가의 ${x.other} 출제 (이 작품 자체는 출제되지 않음)`:'';
   return `<button class="res" onclick="go('${r.path}')"><b>${esc(x.title)}</b> <span class="badge era" style="background:${GCOLOR[x.genre]||'#2f5bd3'}">${esc(x.genre)}</span><div class="small muted">${esc(sub)}</div>${snip?`<div class="small">${esc(snip)}</div>`:''}</button>`}).join(''):''}).join('')+(res.length?'':'<div class="card muted">결과가 없어요.</div>');
 }
 
@@ -778,17 +1020,23 @@ PAGES.settings=function(){
  <div class="card"><h3>화면 색</h3><div class="seg" style="margin:0">${[['auto','기기 설정'],['light','밝게'],['dark','어둡게']].map(([k,n])=>`<button class="${S.ui.theme===k?'on':''}" onclick="S.ui.theme='${k}';save();applyUI();PAGES.settings()">${n}</button>`).join('')}</div></div>
  <div class="card"><h3>학습 기록</h3><p class="small muted" style="margin-top:0">기기·브라우저를 바꾸면 기록이 옮겨지지 않아요. 백업 파일로 옮기세요.</p>
   <div class="grid2"><button class="btn pri" onclick="exportData()">⬇ 백업 저장</button><label class="btn">⬆ 백업 불러오기<input type="file" accept=".json,application/json" hidden onchange="importData(event)"></label><button class="btn warn" onclick="resetData(false)">학습 기록만 초기화</button><button class="btn warn" onclick="resetData(true)">설정까지 초기화</button></div></div>
- <div class="card"><h3>인쇄</h3><div class="grid2"><button class="btn" onclick="go('print/cards')">전체 학습 카드</button><button class="btn" onclick="go('print/weak')">복습 항목 카드</button><button class="btn" onclick="go('print/rq')">독서 O/X 문제지</button><button class="btn" onclick="go('print/ra')">독서 O/X 정답·해설</button></div></div>
+ <div class="card"><h3>인쇄</h3><div class="grid2"><button class="btn" onclick="go('print/cards')">전체 학습 카드</button><button class="btn" onclick="go('print/weak')">복습 항목 카드</button><button class="btn" onclick="go('print/rq')">독서 O/X 문제지</button><button class="btn" onclick="go('print/ra')">독서 O/X 정답·해설</button><button class="btn" onclick="go('print/ebs')">S·A 체크리스트</button><button class="btn" onclick="go('print/ebsw')">다시 볼 S·A</button></div></div>
  <div class="card"><h3>자료와 저작권</h3><ul class="small" style="padding-left:1.1rem;margin:0">
   <li><b>엑셀 「수능 예상 작품」</b>: 문학 25·독서 20 학습 카드의 원자료. 파일명은 2026이지만 시트에는 2027학년도로 표기. 작성 기준은 확인되지 않았습니다.</li>
   <li><b>「최서희의 파이널 체크포인트」 산문 편 23쪽·운문 편 21쪽</b>: 작품명·작가·교재 쪽·PDF 쪽·우선순위만 색인으로 사용. 해설 본문·표·이미지는 싣지 않았습니다. PDF 전문을 공개 저장소에 올리려면 권리자 허락이 필요합니다.</li>
+  <li><b>${EBS_SRC}</b>: 수특 125·수완 42작품을 참고자료 11종과 대조한 표. 이 도구에는 S·A 34편의 작품명·작가·교재 쪽·종합 등급·최상위 표시 자료 수·과거 기출 연도와, 올해 모평 연계 출제 7편·같은 작가 출제 4편만 옮겼습니다. 주제·학습 메모·자료별 평가표는 싣지 않았습니다. 등급은 출제 확률이 아니라 자료 간 합의 정도입니다. 공개 배포 허용 범위는 배포처에 확인이 필요합니다.</li>
+  <li><b>수능완성 학습맵</b>: 수완 문학 42·독서 22 해설 링크 모음은 <a href="${MAP_URL}">별도 페이지</a>에 있고, 기록도 그 페이지에 따로 저장됩니다.</li>
   <li><b>보정·보충</b>: 「상춘곡」 교재 표기와 화자 태도·표현, 「사과밭을 지나며」 정서 흐름, 독서 O/X 20문항은 자체 정리입니다(보라색 표시). 배포 전 교사 확인을 권합니다.</li>
-  <li>2027학년도 수능: 2026년 11월 19일(목).</li></ul></div>`;
+  <li>2027학년도 수능: 2026년 11월 19일(목).</li></ul></div>
+ <div class="card"><h3>버전 · 검수 범위</h3><ul class="small" style="padding-left:1.1rem;margin:0">
+  <li><b>버전</b> v3.1 (2026-11-10)</li>
+  <li><b>검수 완료</b>: 중요 S·A 34편의 등급·최상위 표시 자료 수·교재 쪽·과거 기출, 모평 연계 7편·같은 작가 4편을 통합표와 대조(2026-11-10). 휴대폰 화면 실행·기존 기록 보존 확인.</li>
+  <li><b>검수하지 않은 범위</b>: 수능완성 학습맵의 외부 블로그 해설 링크 — 접속 가능 여부와 해설 내용 일치 여부 모두 미확인(링크 없는 10개는 ‘준비 중’ 표시).</li></ul></div>`;
 };
 function exportData(){const b=new Blob([JSON.stringify({format:KEY,exportedAt:new Date().toISOString(),data:S},null,1)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='국어_학습기록_'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000)}
 async function importData(e){const f=e.target.files[0];e.target.value='';if(!f)return;
  try{const p=JSON.parse(await f.text());if(p.format!==KEY||!p.data)throw new Error('이 학습 도구의 백업 파일이 아닙니다.');const v=validate(p.data);if(!v)throw new Error('파일 내용을 확인할 수 없습니다.');
-  if(!confirm(`백업(공부함 ${Object.values(v.done).filter(Boolean).length}개, 풀이 기록 ${Object.keys(v.hist).length}개)으로 덮어쓸까요?`))return;S=v;save();applyUI();toast('복원했어요');PAGES.settings()}
+  if(!confirm(`백업(공부함 ${Object.values(v.done).filter(Boolean).length}개, 풀이 기록 ${Object.keys(v.hist).length}개)으로 덮어쓸까요?`))return;S=v;syncLinked();save();applyUI();toast('복원했어요');PAGES.settings()}
  catch(err){toast('불러오기 실패: '+err.message,4000)}}
 function resetData(all){if(!confirm(all?'학습 기록과 화면 설정을 모두 지울까요?':'학습 기록(공부함·헷갈림·풀이·점검)을 지울까요?'))return;const ui=S.ui;S=blank();if(!all)S.ui=ui;save();applyUI();QS=null;toast('초기화했어요');PAGES.settings()}
 
@@ -796,7 +1044,9 @@ function resetData(all){if(!confirm(all?'학습 기록과 화면 설정을 모�
 PAGES.print=function(kind){
  let html='',title='';
  if(kind==='cards'||kind==='weak'){const list=[...L,...R].filter(x=>kind==='cards'||curWrong(x.id)||S.weak[x.id]);title=kind==='cards'?'전체 학습 카드':'복습 항목 카드';const sv=blind;blind=false;html=list.map(cardHTML).join('')||'<p>해당 항목이 없습니다.</p>';blind=sv}
- else{title=kind==='rq'?'독서 판단 O/X 문제지':'독서 판단 O/X 정답·해설';html=R.map((r,i)=>{const [a,st,ex]=READ_OX[r.id];return `<div class="card"><b>${i+1}.</b> [${esc(r.title)}] ${esc(st)}<div style="margin-top:.3rem">${kind==='rq'?'( O · X )':`<b>정답 ${a?'O':'X'}</b> — ${esc(ex)}`}</div></div>`}).join('')}
+ else if(kind==='ebs'||kind==='ebsw'){const list=EBS.filter(e=>kind==='ebs'||ebsWeak(e)).slice().sort((a,b)=>EGEN.indexOf(a.genre)-EGEN.indexOf(b.genre)||GRANK[a.grade]-GRANK[b.grade]);title=kind==='ebs'?'중요 문학 S·A 체크리스트':'다시 볼 S·A 체크리스트';
+  html=`<p class="small">${esc(EBS_SRC)} 기준 · 등급은 자료 간 합의 정도이며 출제 확률이 아님</p><div class="tw"><table class="ptab"><thead><tr><th>✓</th><th>등급</th><th>작품</th><th>작가</th><th>갈래</th><th>교재</th><th>과거 기출</th></tr></thead><tbody>${list.map(e=>`<tr><td>${ebsDone(e)?'☑':'☐'}</td><td>${e.grade}</td><td>${esc(e.title)}</td><td>${esc(e.author)}</td><td>${esc(e.genre)}</td><td>${e.book} ${esc(e.pp)}쪽</td><td>${esc(e.past||'')}</td></tr>`).join('')||'<tr><td colspan="7">해당 작품이 없습니다.</td></tr>'}</tbody></table></div>`}
+ else{title=kind==='rq'?'독서 판단 O/X 문제지':'독서 판단 O/X 정답·해설';html=R.map((r,i)=>{const [a,st,ex]=READ_OX[r.id];return `<div class="card"><b>${i+1}.</b> <span class="badge">${esc(r.area)}</span> [${esc(r.title)}] ${esc(st)}<div style="margin-top:.3rem">${kind==='rq'?'( O · X )':`<b>정답 ${a?'O':'X'}</b> — ${esc(ex)}`}</div></div>`}).join('')}
  $('#app').innerHTML=`<div class="noprint note row between"><span>인쇄 미리보기</span><span class="row"><button class="btn pri" onclick="window.print()">🖨 인쇄</button><button class="btn" onclick="history.back()">돌아가기</button></span></div><h1>${title}</h1><p class="sub">국어 파이널 허브 · ${new Date().toLocaleDateString('ko-KR')}</p>${html}`;
 };
 
